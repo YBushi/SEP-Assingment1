@@ -21,5 +21,6 @@ Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestB
 ![Coverage results output](image-3.png)
 
 Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
-
-
+![Data Structure to hold coverage information, write all information about the branches taken to a console](image-4.png)
+![Set a flag if the branch is reached](image-5.png)
+![Coverage results output](image-6.png)
