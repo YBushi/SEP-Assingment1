@@ -18,12 +18,36 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
 
 public class ApacheHttpClient extends AbstractAsyncOnlyHttpClient {
 
     private final CloseableHttpAsyncClient client;
+    //data structure for info about the branches
+    private static final ConcurrentHashMap<String, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
+    static {
+        branchCoverage.put("branch_1", new AtomicBoolean(false)); // GET
+        branchCoverage.put("branch_2", new AtomicBoolean(false)); // PUT
+        branchCoverage.put("branch_3", new AtomicBoolean(false)); // DELETE
+        branchCoverage.put("branch_4", new AtomicBoolean(false)); // HEAD
+        branchCoverage.put("branch_5", new AtomicBoolean(false)); // POST
+        branchCoverage.put("branch_6", new AtomicBoolean(false)); // PATCH
+        branchCoverage.put("branch_7", new AtomicBoolean(false)); // TRACE
+        branchCoverage.put("branch_8", new AtomicBoolean(false)); // OPTIONS
+        branchCoverage.put("branch_9", new AtomicBoolean(false)); // DEFAULT
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (Map.Entry<String, AtomicBoolean> entry : branchCoverage.entrySet()) {
+                    System.out.println(entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
+                }
+            }
+        }));
+    }
 
     public ApacheHttpClient() {
         this(ApacheHttpClientConfig.defaultConfig());
@@ -100,27 +124,45 @@ public class ApacheHttpClient extends AbstractAsyncOnlyHttpClient {
         final Future<HttpResponse> future = client.execute(builder.build(), handler);
         return new ApacheHttpFuture<>(future, handler);
     }
-    
+
     //branch coverage: Tomas
     private static RequestBuilder getRequestBuilder(Verb httpVerb) {
         switch (httpVerb) {
+            //ID: branch_1
             case GET:
+                branchCoverage.get("branch_1").set(true);
                 return RequestBuilder.get();
+            //ID: branch_2
             case PUT:
+                branchCoverage.get("branch_2").set(true);
                 return RequestBuilder.put();
+            //ID: branch_3 
             case DELETE:
+                branchCoverage.get("branch_3").set(true);
                 return RequestBuilder.delete();
+            //ID: branch_4    
             case HEAD:
+                branchCoverage.get("branch_4").set(true);
                 return RequestBuilder.head();
+            //ID: branch_5    
             case POST:
+                branchCoverage.get("branch_5").set(true);
                 return RequestBuilder.post();
+            //ID: branch_6
             case PATCH:
+                branchCoverage.get("branch_6").set(true);
                 return RequestBuilder.patch();
+            //ID: branch_7
             case TRACE:
+                branchCoverage.get("branch_7").set(true);
                 return RequestBuilder.trace();
+            //ID: branch_8
             case OPTIONS:
+                branchCoverage.get("branch_8").set(true);
                 return RequestBuilder.options();
+            //ID: branch_9
             default:
+                branchCoverage.get("branch_9").set(true);
                 throw new IllegalArgumentException("message build error: unknown verb type");
         }
     }
