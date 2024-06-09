@@ -42,8 +42,11 @@ public class ApacheHttpClient extends AbstractAsyncOnlyHttpClient {
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
             public void run() {
-                for (Map.Entry<String, AtomicBoolean> entry : branchCoverage.entrySet()) {
-                    System.out.println(entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
+                synchronized (System.out) {
+                    System.out.println("ApacheHttpClient.java getRequestBuilder method coverage:");
+                    for (Map.Entry<String, AtomicBoolean> entry : branchCoverage.entrySet()) {
+                        System.out.println(entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
+                    }
                 }
             }
         }));

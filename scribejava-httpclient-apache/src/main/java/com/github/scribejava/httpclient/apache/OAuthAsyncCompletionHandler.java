@@ -40,8 +40,11 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
             public void run() {
-                for (Map.Entry<String, AtomicBoolean> entry : branchCoverage.entrySet()) {
-                    System.out.println(entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
+                synchronized (System.out) {
+                    System.out.println("OAuthAsyncCompletionHandler.java completed method coverage:");
+                    for (Map.Entry<String, AtomicBoolean> entry : branchCoverage.entrySet()) {
+                        System.out.println(entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
+                    }
                 }
             }
         }));
