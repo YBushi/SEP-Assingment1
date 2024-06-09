@@ -14,8 +14,12 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 
 ### Our own coverage tool
 Tomas Busa
-Function 1: getRequestBuilder
+Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
 
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](image-1.png)
 ![Set a flag if the branch is reached](image-2.png)
 ![Coverage results output](image-3.png)
+
+Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
+
+
