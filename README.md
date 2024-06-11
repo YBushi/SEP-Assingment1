@@ -13,6 +13,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![ScreenShot of coverage results](image.png)
 
 ### Our own coverage tool
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Tomas Busa
 Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
 
@@ -28,10 +29,14 @@ Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.
 ![Before adding coverage](image.png)
 ![After adding coverage](image-1.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Jayran Duggins
 Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
 
 Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Nikola Bakalinov
 Function 1: scribejava/scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning
@@ -60,11 +65,11 @@ Function 2: SEP-Assingment1/scribejava-httpclient-armeria/src/main/java/com/gith
 
 
 
-
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9f7c108a-fc45-4466-bbae-f72f10861526)
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8a842731-beec-4bc9-957b-c7b0be9ca350)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
