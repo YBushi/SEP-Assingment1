@@ -61,37 +61,44 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
     public void completed(HttpResponse httpResponse) {
         try {
             final Map<String, String> headersMap = new HashMap<>();
-            //ID: branch_1
+            // ID: branch_1
             for (Header header : httpResponse.getAllHeaders()) {
                 headersMap.put(header.getName(), header.getValue());
             }
-
+    
             final StatusLine statusLine = httpResponse.getStatusLine();
-
             final HttpEntity httpEntity = httpResponse.getEntity();
-            //ID: branch_2
+    
+            // ID: branch_2
             if (httpEntity == null) {
                 branchCoverage.get("branch_2").set(true);
+                result = null; // Ensure result is null if httpEntity is null
             } else {
                 branchCoverage.get("branch_2").set(true);
-            }
-            final InputStream contentStream = httpEntity == null ? null : httpEntity.getContent();
-            final Response response = new Response(statusLine.getStatusCode(), statusLine.getReasonPhrase(), headersMap,
-                    contentStream, contentStream);
-
-            @SuppressWarnings("unchecked")
-            final T t = converter == null ? (T) response : converter.convert(response);
-            //ID: branch_3
-            if (converter == null) {
-                branchCoverage.get("branch_3").set(true);
-            } else {
-                branchCoverage.get("branch_3").set(true);
-            }
-            result = t;
-            //ID: branch_4
-            if (callback != null) {
-                branchCoverage.get("branch_4").set(true);
-                callback.onCompleted(result);
+                final InputStream contentStream = httpEntity.getContent();
+                final Response response = new Response(
+                    statusLine.getStatusCode(),
+                    statusLine.getReasonPhrase(),
+                    headersMap,
+                    contentStream,
+                    contentStream
+                );
+    
+                @SuppressWarnings("unchecked")
+                final T t = converter == null ? (T) response : converter.convert(response);
+                // ID: branch_3
+                if (converter == null) {
+                    branchCoverage.get("branch_3").set(true);
+                } else {
+                    branchCoverage.get("branch_3").set(true);
+                }
+                result = t;
+    
+                // ID: branch_4
+                if (callback != null) {
+                    branchCoverage.get("branch_4").set(true);
+                    callback.onCompleted(result);
+                }
             }
         } catch (IOException | RuntimeException e) {
             branchCoverage.get("branch_5").set(true);
