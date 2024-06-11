@@ -27,9 +27,9 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 #### Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/function2_dataStructure.png)
-Set a flag if the branch is reached:
+#### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](tomas_images/function2_flagsetting.png)
-Coverage results output:
+#### Coverage results output:
 ![Coverage results output](tomas_images/function2_results.png)
 
 #### 3.4
