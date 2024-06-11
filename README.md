@@ -31,9 +31,7 @@ Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.
 Jayran Duggins
 Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
 
-Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaWebClientBuilder.java (newWebClient)
-
-
+Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
 
 Nikola Bakalinov
 Function 1: scribejava/scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning
