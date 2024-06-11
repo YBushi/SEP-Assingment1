@@ -27,9 +27,6 @@ Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.
 ![Set a flag if the branch is reached](tomas_images/function2_flagsetting.png)
 ![Coverage results output](tomas_images/function2_results.png)
 
-![Before adding coverage](image.png)
-![After adding coverage](image-1.png)
-
 3.4
 Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
 
