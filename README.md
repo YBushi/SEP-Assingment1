@@ -18,14 +18,14 @@ Tomas Busa
 3.3
 Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
 
-![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/image-1.png)
-![Set a flag if the branch is reached](image-2.png)
-![Coverage results output](image-3.png)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/function1_dataStructure.png)
+![Set a flag if the branch is reached](tomas_images/function1_flagsetting.png)
+![Coverage results output](tomas_images/function1_results.png)
 
 Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
-![Data Structure to hold coverage information, write all information about the branches taken to a console](image-4.png)
-![Set a flag if the branch is reached](image-5.png)
-![Coverage results output](image-6.png)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/function2_dataStructure.png)
+![Set a flag if the branch is reached](tomas_images/function2_flagsetting.png)
+![Coverage results output](tomas_images/function2_results.png)
 
 ![Before adding coverage](image.png)
 ![After adding coverage](image-1.png)
