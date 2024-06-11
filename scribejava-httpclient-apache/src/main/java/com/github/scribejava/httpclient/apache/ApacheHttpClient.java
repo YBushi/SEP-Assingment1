@@ -129,7 +129,7 @@ public class ApacheHttpClient extends AbstractAsyncOnlyHttpClient {
     }
 
     //branch coverage: Tomas
-    private static RequestBuilder getRequestBuilder(Verb httpVerb) {
+    public static RequestBuilder getRequestBuilder(Verb httpVerb) {
         switch (httpVerb) {
             //ID: branch_1
             case GET:
