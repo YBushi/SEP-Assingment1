@@ -10,14 +10,15 @@ Programming language: Java
 ### Existing tool
 Name of the existing tool used was Jacoco. It was executed by adding a Jacoco plugin into the pom.xml file and then executing maven. (Add some details)
 (Provide screenshot, there is a problem that it only creates reports for specific parts such as scribejava-core, figure out a way to put it all in one report)
-![ScreenShot of coverage results](image.png)
+![ScreenShot of coverage results](projectCoverage.png)
 
 ### Our own coverage tool
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Tomas Busa
+3.3
 Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
 
-![Data Structure to hold coverage information, write all information about the branches taken to a console](image-1.png)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/image-1.png)
 ![Set a flag if the branch is reached](image-2.png)
 ![Coverage results output](image-3.png)
 
@@ -28,6 +29,11 @@ Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.
 
 ![Before adding coverage](image.png)
 ![After adding coverage](image-1.png)
+
+3.4
+Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
+
+Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
