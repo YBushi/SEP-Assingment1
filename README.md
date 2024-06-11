@@ -17,7 +17,6 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 Tomas Busa
 3.3
 Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
-
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/function1_dataStructure.png)
 ![Set a flag if the branch is reached](tomas_images/function1_flagsetting.png)
 ![Coverage results output](tomas_images/function1_results.png)
@@ -29,8 +28,15 @@ Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.
 
 3.4
 Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
+![New tests](tomas_images/function1_newTests-1.png)
+![New tests](tomas_images/function1_newTests-2.png)
+![Coverage before tests](tomas_images/function1_coverageBefore.png)
+![Coverage after tests](tomas_images/function1_coverageAfter.png)
 
 Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
+![New tests](tomas_images/function2_newTests.png)
+![Coverage before tests](tomas_images/function2_coverageBefore.png)
+![Coverage after tests](tomas_images/function2_coverageAfter.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
