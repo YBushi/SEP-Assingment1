@@ -63,6 +63,7 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
             final Map<String, String> headersMap = new HashMap<>();
             // ID: OAuthAsyncCompletionHandler.completed.branch_1
             for (Header header : httpResponse.getAllHeaders()) {
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_1").set(true);
                 headersMap.put(header.getName(), header.getValue());
             }
     
@@ -71,10 +72,10 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
     
             // ID: OAuthAsyncCompletionHandler.completed.branch_2
             if (httpEntity == null) {
-                branchCoverage.get("branch_2").set(true);
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2").set(true);
                 result = null; // Ensure result is null if httpEntity is null
             } else {
-                branchCoverage.get("branch_2").set(true);
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2").set(true);
                 final InputStream contentStream = httpEntity.getContent();
                 final Response response = new Response(
                     statusLine.getStatusCode(),
@@ -88,25 +89,25 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
                 final T t = converter == null ? (T) response : converter.convert(response);
                 // ID: OAuthAsyncCompletionHandler.completed.branch_3
                 if (converter == null) {
-                    branchCoverage.get("branch_3").set(true);
+                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_3").set(true);
                 } else {
-                    branchCoverage.get("branch_3").set(true);
+                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_3").set(true);
                 }
                 result = t;
     
                 // ID: OAuthAsyncCompletionHandler.completed.branch_4
                 if (callback != null) {
-                    branchCoverage.get("branch_4").set(true);
+                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_4").set(true);
                     callback.onCompleted(result);
                 }
             }
             // ID: OAuthAsyncCompletionHandler.completed.branch_5
         } catch (IOException | RuntimeException e) {
-            branchCoverage.get("branch_5").set(true);
+            branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_5").set(true);
             exception = e;
             // ID: OAuthAsyncCompletionHandler.completed.branch_6
             if (callback != null) {
-                branchCoverage.get("branch_6").set(true);
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_6").set(true);
                 callback.onThrowable(e);
             }
         } finally {
