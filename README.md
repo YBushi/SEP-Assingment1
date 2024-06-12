@@ -51,12 +51,41 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![Coverage after tests](tomas_images/function2_coverageAfter.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Jayran Duggins
-Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
-
-Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
-
+#### Jayran Duggins
+#### 3.3
+#### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
+#### Data Structure to hold coverage information, write all information about the branches taken to a console:
+![Data Structure to hold coverage information, write all information about the branches taken to a console](insert image)
+#### Set a flag if the branch is reached:
+![Set a flag if the branch is reached](insert image)
+#### Coverage results output:
+![Coverage results output](insert image)
+####
+#### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
+#### Data Structure to hold coverage information, write all information about the branches taken to a console:
+![Data Structure to hold coverage information, write all information about the branches taken to a console](insert image)
+#### Set a flag if the branch is reached:
+![Set a flag if the branch is reached](insert image)
+#### Coverage results output:
+![Coverage results output](insert image)
+####
+#### 3.4
+#### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
+#### New tests:
+![New tests](insert image)
+![New tests](insert image)
+#### Coverage before:
+![Coverage before tests](insert image)
+#### Coverage after:
+![Coverage after tests](insert image)
+####
+#### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
+#### New tests:
+![New tests](insert image)
+#### Coverage before:
+![Coverage before tests](insert image)
+#### Coverage after:
+![Coverage after tests](insert image)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Nikola Bakalinov
