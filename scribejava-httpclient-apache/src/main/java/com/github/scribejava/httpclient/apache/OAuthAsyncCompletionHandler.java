@@ -31,12 +31,12 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
     private Exception exception;
     private static final ConcurrentHashMap<String, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
     static {
-        branchCoverage.put("branch_1", new AtomicBoolean(false)); // loop over headers
-        branchCoverage.put("branch_2", new AtomicBoolean(false)); // httpEntity null check
-        branchCoverage.put("branch_3", new AtomicBoolean(false)); // converter null check
-        branchCoverage.put("branch_4", new AtomicBoolean(false)); // callback null check (onCompleted)
-        branchCoverage.put("branch_5", new AtomicBoolean(false)); // IOException/RuntimeException catch block
-        branchCoverage.put("branch_6", new AtomicBoolean(false)); // callback null check (onThrowable)
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_1", new AtomicBoolean(false)); // loop over headers
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_2", new AtomicBoolean(false)); // httpEntity null check
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_3", new AtomicBoolean(false)); // converter null check
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_4", new AtomicBoolean(false)); // callback null check (onCompleted)
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_5", new AtomicBoolean(false)); // IOException/RuntimeException catch block
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_6", new AtomicBoolean(false)); // callback null check (onThrowable)
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
             public void run() {
@@ -61,7 +61,7 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
     public void completed(HttpResponse httpResponse) {
         try {
             final Map<String, String> headersMap = new HashMap<>();
-            // ID: branch_1
+            // ID: OAuthAsyncCompletionHandler.completed.branch_1
             for (Header header : httpResponse.getAllHeaders()) {
                 headersMap.put(header.getName(), header.getValue());
             }
@@ -69,7 +69,7 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
             final StatusLine statusLine = httpResponse.getStatusLine();
             final HttpEntity httpEntity = httpResponse.getEntity();
     
-            // ID: branch_2
+            // ID: OAuthAsyncCompletionHandler.completed.branch_2
             if (httpEntity == null) {
                 branchCoverage.get("branch_2").set(true);
                 result = null; // Ensure result is null if httpEntity is null
@@ -86,7 +86,7 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
     
                 @SuppressWarnings("unchecked")
                 final T t = converter == null ? (T) response : converter.convert(response);
-                // ID: branch_3
+                // ID: OAuthAsyncCompletionHandler.completed.branch_3
                 if (converter == null) {
                     branchCoverage.get("branch_3").set(true);
                 } else {
@@ -94,15 +94,17 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
                 }
                 result = t;
     
-                // ID: branch_4
+                // ID: OAuthAsyncCompletionHandler.completed.branch_4
                 if (callback != null) {
                     branchCoverage.get("branch_4").set(true);
                     callback.onCompleted(result);
                 }
             }
+            // ID: OAuthAsyncCompletionHandler.completed.branch_5
         } catch (IOException | RuntimeException e) {
             branchCoverage.get("branch_5").set(true);
             exception = e;
+            // ID: OAuthAsyncCompletionHandler.completed.branch_6
             if (callback != null) {
                 branchCoverage.get("branch_6").set(true);
                 callback.onThrowable(e);
