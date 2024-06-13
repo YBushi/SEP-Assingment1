@@ -119,6 +119,21 @@ Function 2: SEP-Assingment1/scribejava-httpclient-armeria/src/main/java/com/gith
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8a842731-beec-4bc9-957b-c7b0be9ca350)
 
+
+
+
+
+
+
+Armeria coverage before :
+
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/5c01d558-a2cc-4f83-aece-0e08067248fb)
+
+
+
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
