@@ -149,6 +149,8 @@ Armeria coverage before :
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/2f8b12e4-2b33-4047-ba30-99c08838881f)
 
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e6220d6b-a68d-4d21-b890-55be099b600f)
+
 
 
 
