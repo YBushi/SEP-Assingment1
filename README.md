@@ -51,23 +51,27 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![Coverage after tests](tomas_images/function2_coverageAfter.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-
 #### Jayran Duggins
 #### 3.3
 #### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![Data Structure to hold coverage information, write all information about the branches taken to a console](jayran_images/Function 1 Data Structure for Info.png)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](jayran_images/Function_1_Data_Structure_for_Info.png)
 #### Set a flag if the branch is reached:
-![Set a flag if the branch is reached](insert image)
+![Set a flag if the branch is reached](jayran_images/Function_1_Set_flag_pt1.png)
+![Set a flag if the branch is reached](jayran_images/Function_1_Set_flag_pt2.png)
 #### Coverage results output:
-![Coverage results output](insert image)
+![Coverage results output](jayran_images/Function_1_Manual_Coverage_Report.png)
 ####
 #### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![Data Structure to hold coverage information, write all information about the branches taken to a console](insert image)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](jayran_images/Function_2_Data_structure_for_info_about_the_branches_1.png)
 #### Set a flag if the branch is reached:
-![Set a flag if the branch is reached](insert image)
+![Set a flag if the branch is reached](jayran_images/Function_2_Set_a_flag_section.png)
 #### Coverage results output:
-![Coverage results output](insert image)
+![Coverage results output](jayran_images/Function_2_Manual_Coverage_Report.png)
+#### Code Used to Print Coverage (Function 1 & 2):
+![Code used to print coverage](jayran_images/Print_Function_Used_To_Print_Coverage_Results.png)
 ####
 #### 3.4
 #### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
@@ -75,17 +79,18 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![New tests](insert image)
 ![New tests](insert image)
 #### Coverage before:
-![Coverage before tests](insert image)
+![Coverage before tests](jayran_images/Function_1_Coverage_Before_New_Test.png)
 #### Coverage after:
-![Coverage after tests](insert image)
+![Coverage after tests](jayran_images/Function_1_Coverage_After_New_Test.png)
 ####
 #### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
 #### New tests:
 ![New tests](insert image)
 #### Coverage before:
-![Coverage before tests](insert image)
+![Coverage before tests](jayran_images/Function_2_Coverage_Before_New_Test.png)
 #### Coverage after:
-![Coverage after tests](insert image)
+![Coverage after tests](jayran_images/Function_2_Coverage_After_New_Test.png)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Nikola Bakalinov
