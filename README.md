@@ -170,7 +170,8 @@ Set a flag if the branch is reached:
 Coverage results output:
 
 
-![Uploading image.png…]()
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/5f51c833-949a-4ec0-8853-14c1574370dc)
+
 
 
 
