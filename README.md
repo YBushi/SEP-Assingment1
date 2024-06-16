@@ -138,7 +138,9 @@ Armeria coverage before :
 
 
 
-
+3.3
+Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
+Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/076c647d-ac92-44aa-9ded-3909b64290ca)
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cf9f7319-5267-4074-a336-94390c8ad201)
