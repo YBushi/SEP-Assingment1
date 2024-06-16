@@ -140,6 +140,7 @@ Armeria coverage before :
 
 3.3
 Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
+
 Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/076c647d-ac92-44aa-9ded-3909b64290ca)
 
@@ -155,6 +156,7 @@ Coverage results output:
 
 
 Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
+
 Data Structure to hold coverage information, write all information about the branches taken to a console:
 
 
@@ -199,6 +201,28 @@ Coverage after:
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e6220d6b-a68d-4d21-b890-55be099b600f)
 
+
+
+New Tests 
+
+Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
+
+
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9cbbb9be-455c-4bc3-97ea-b547cf1f3f01)
+
+
+
+
+Coverage before : 
+
+
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/b5e3b5b7-fcf3-486d-9deb-58519bed2be9)
+
+
+Coverage after:
+
+
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/374fdd51-de07-4af6-9c40-32729cfdab91)
 
 
 
