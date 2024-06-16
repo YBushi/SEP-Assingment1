@@ -164,7 +164,12 @@ Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/Fa
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/1007aaf6-8a61-49ea-9729-e3f52bd674cf)
 
 
+Coverage before:
+
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/2f8b12e4-2b33-4047-ba30-99c08838881f)
+
+Coverage after:
+
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e6220d6b-a68d-4d21-b890-55be099b600f)
 
