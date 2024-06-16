@@ -153,6 +153,14 @@ Coverage results output:
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cec52a48-7904-4708-8603-c2caee802718)
 
+
+3.4
+
+New Tests 
+
+Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
+
+
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/1007aaf6-8a61-49ea-9729-e3f52bd674cf)
 
 
