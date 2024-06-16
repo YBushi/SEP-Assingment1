@@ -55,7 +55,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 #### 3.3
 #### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![Data Structure to hold coverage information, write all information about the branches taken to a console](insert image)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](jayran_images/Function 1 Data Structure for Info.png)
 #### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](insert image)
 #### Coverage results output:
