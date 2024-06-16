@@ -76,8 +76,8 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 #### 3.4
 #### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
 #### New tests:
-![New tests](insert image)
-![New tests](insert image)
+![New tests](jayran_images/Function_1_TestCode_1.png)
+![New tests](jayran_images/Function_1_TestCode_2.png)
 #### Coverage before:
 ![Coverage before tests](jayran_images/Function_1_Coverage_Before_New_Test.png)
 #### Coverage after:
@@ -85,7 +85,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ####
 #### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
 #### New tests:
-![New tests](insert image)
+![New tests](jayran_images/Function_2_TestCode.png)
 #### Coverage before:
 ![Coverage before tests](jayran_images/Function_2_Coverage_Before_New_Test.png)
 #### Coverage after:
