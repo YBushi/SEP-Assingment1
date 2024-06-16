@@ -139,7 +139,7 @@ Armeria coverage before :
 
 
 3.3
-Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
+Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
 Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/076c647d-ac92-44aa-9ded-3909b64290ca)
 
