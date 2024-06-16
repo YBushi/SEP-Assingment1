@@ -154,8 +154,24 @@ Coverage results output:
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cec52a48-7904-4708-8603-c2caee802718)
 
 
+Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
+Data Structure to hold coverage information, write all information about the branches taken to a console:
+
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/060d6659-83f2-400f-b5ba-ee9f33f57501)
+
+
+Set a flag if the branch is reached:
+
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9bd776b8-279f-4a6f-924a-e84a74650c0f)
+
+
+
+Coverage results output:
+
+
+![Uploading image.png…]()
+
 
 
 
