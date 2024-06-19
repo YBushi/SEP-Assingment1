@@ -8,16 +8,14 @@ Programming language: Java
 
 ## Coverage measurement
 ### Existing tool
-Name of the existing tool used was Jacoco. It was executed by adding a Jacoco plugin into the pom.xml file and then executing maven. (Add some details)
-(Provide screenshot, there is a problem that it only creates reports for specific parts such as scribejava-core, figure out a way to put it all in one report)
-![ScreenShot of coverage scribejava-apis](coverageTool_images/scribeJava-before.png)
-![ScreenShot of coverage scribejava-core](coverageTool_images/scribeJava-before.png)
-![ScreenShot of coverage scribejava-httpclient-ahc](coverageTool_images/scribeJava-before.png)
-![ScreenShot of coverage scribejava-httpclient-apache](coverageTool_images/scribeJava-before.png)
-![ScreenShot of coverage scribejava-httpclient-armeria](coverageTool_images/scribeJava-before.png)
-![ScreenShot of coverage scribejava-httpclient-ning](coverageTool_images/scribeJava-before.png)
-![ScreenShot of coverage scribejava-httpclient-okhttp](coverageTool_images/scribeJava-before.png)
-![ScreenShot of coverage results](projectCoverage.png)
+Name of the existing tool used was Jacoco. It was executed by adding a Jacoco plugin into the pom.xml file and then executing maven.
+![ScreenShot of coverage scribejava-apis](coverageTool_images/scribeJava-apis-before.png)
+![ScreenShot of coverage scribejava-core](coverageTool_images/scribeJava-core-before.png)
+![ScreenShot of coverage scribejava-httpclient-ahc](coverageTool_images/scribeJava-http-ahc-before.png)
+![ScreenShot of coverage scribejava-httpclient-apache](coverageTool_images/scribeJava-http-apache-before.png)
+![ScreenShot of coverage scribejava-httpclient-armeria](coverageTool_images/scribeJava-http-armeria-before.png)
+![ScreenShot of coverage scribejava-httpclient-ning](coverageTool_images/scribeJava-http-ning-before.png)
+![ScreenShot of coverage scribejava-httpclient-okhttp](coverageTool_images/scribeJava-http-okhttp-before.png)
 
 ### Our own coverage tool
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
