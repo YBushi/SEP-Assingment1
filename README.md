@@ -119,8 +119,52 @@ Function 2: SEP-Assingment1/scribejava-httpclient-armeria/src/main/java/com/gith
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8a842731-beec-4bc9-957b-c7b0be9ca350)
 
-#### Luis Sartorius
-(https://docs.google.com/document/d/1lUPtcHeRGTgNIXnUmRglnQaqiwQiztZxEZ73iHxK8d8/edit?usp=sharing)
+####﻿ Luis Sartorius
+### Function 1:
+
+![Print results for OAuth10aService](Luis-images/image.png)
+
+![OAuth10aService coverage before](Luis-images/image-1.png)
+
+![OAuth10aService coverage after](Luis-images/image-2.png)
+
+![Modified code for OAuth10aService](Luis-images/image-3.png)
+
+![Modified code for OAuth10aService](Luis-images/image-4.png)
+
+
+### Function 2:
+
+![Print results for Auth2](Luis-images/image-5.png)
+
+#### Auth2Polar
+![Polar coverage after](Luis-images/image-6.png)
+
+![Polar coverage before](Luis-images/image-7.png)
+
+![Modified code for Polar](Luis-images/image-8.png)
+
+![Modified code for Polar](Luis-images/image-9.png)
+
+#### Auth2FitBit
+
+![FitBit coverage after](Luis-images/image-10.png)
+
+![FitBit coverage before](Luis-images/image-11.png)
+
+![Modified code for Fitbit](Luis-images/image-12.png)
+
+![Modified code for Fitbit](Luis-images/image-13.png)
+
+
+
+
+
+
+
+
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
