@@ -119,6 +119,9 @@ Function 2: SEP-Assingment1/scribejava-httpclient-armeria/src/main/java/com/gith
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8a842731-beec-4bc9-957b-c7b0be9ca350)
 
+#### Luis Sartorius
+(https://docs.google.com/document/d/1lUPtcHeRGTgNIXnUmRglnQaqiwQiztZxEZ73iHxK8d8/edit?usp=sharing)
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
