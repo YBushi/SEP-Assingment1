@@ -281,3 +281,24 @@ Created a test file
 
 #### Results:
 The coverage went to 0 to 100% because no tests was created for both.
+
+### Overall
+Old coverage results:
+![ScreenShot of coverage scribejava-apis](coverageTool_images/scribeJava-apis-before.png)
+![ScreenShot of coverage scribejava-core](coverageTool_images/scribeJava-core-before.png)
+![ScreenShot of coverage scribejava-httpclient-ahc](coverageTool_images/scribeJava-http-ahc-before.png)
+![ScreenShot of coverage scribejava-httpclient-apache](coverageTool_images/scribeJava-http-apache-before.png)
+![ScreenShot of coverage scribejava-httpclient-armeria](coverageTool_images/scribeJava-http-armeria-before.png)
+![ScreenShot of coverage scribejava-httpclient-ning](coverageTool_images/scribeJava-http-ning-before.png)
+![ScreenShot of coverage scribejava-httpclient-okhttp](coverageTool_images/scribeJava-http-okhttp-before.png)
+
+New coverage results: 
+![ScreenShot of coverage scribejava-apis](coverageTool_images/scribeJava-apis-after.png)
+![ScreenShot of coverage scribejava-core](coverageTool_images/scribeJava-core-after.png)
+![ScreenShot of coverage scribejava-httpclient-ahc](coverageTool_images/scribeJava-http-ahc-after.png)
+![ScreenShot of coverage scribejava-httpclient-apache](coverageTool_images/scribeJava-http-apache-after.png)
+![ScreenShot of coverage scribejava-httpclient-armeria](coverageTool_images/scribeJava-http-armeria-after.png)
+![ScreenShot of coverage scribejava-httpclient-ning](coverageTool_images/scribeJava-http-ning-after.png)
+![ScreenShot of coverage scribejava-httpclient-okhttp](coverageTool_images/scribeJava-http-okhttp-after.png)
+
+## Statement of individual contributions
