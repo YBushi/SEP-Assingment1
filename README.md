@@ -111,13 +111,13 @@ Coverage results provided by the existing tool:
 ![Coverage results output](nikola-images/Function_1_Coverage_results.png)
 #### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![Data Structure to hold coverage information, write all information about the branches taken to a console](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e056c75d-d97b-41fb-bfac-b51efeddc259)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_2_Data_Structure_to_hold_coverage_information.png)
 #### Set a flag if the branch is reached:
-![Set a flag if the branch is reached](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8639b5d3-c4d9-4510-8c78-313a581585df)
+![Set a flag if the branch is reached](nikola-images/Function_2_flag_if_the_branch_is_reached.png)
 ####
-![Set a flag if the branch is reached](https://github.com/YBushi/SEP-Assingment1/assets/113595455/d92a06bc-43d1-4a7e-b62e-1ce23516f2a5)
+![Set a flag if the branch is reached 2nd part](nikola-images/Function_2_flag_if_the_branch_is_reached_2nd_part.png)
 #### Coverage results output:
-![Coverage results output](https://github.com/YBushi/SEP-Assingment1/assets/113595455/99a1f6c1-46c3-4989-8516-fc049d54f389)
+![Coverage results output](nikola-images/Function_2_Coverage_results.png)
 ####
 #### 3.4
 #### New Tests 
@@ -132,11 +132,11 @@ Coverage results provided by the existing tool:
 ![Coverage after tests](nikola-images/Function_1_Coverage_after.png)
 #### New Tests 
 #### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
-![New Tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9cbbb9be-455c-4bc3-97ea-b547cf1f3f01)
+![New Tests](nikola-images/Function_2_New_tests.png)
 #### Coverage before : 
-![Coverage before tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/b5e3b5b7-fcf3-486d-9deb-58519bed2be9)
+![Coverage before tests](nikola-images/Function_2_Coverage_before.png)
 #### Coverage after:
-![Coverage after tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/374fdd51-de07-4af6-9c40-32729cfdab91)
+![Coverage after tests](nikola-images/Function_2_Coverage_after.png)
 
 
 
