@@ -104,39 +104,39 @@ Coverage results provided by the existing tool:
 #### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
 
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/076c647d-ac92-44aa-9ded-3909b64290ca)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](https://github.com/YBushi/SEP-Assingment1/assets/113595455/076c647d-ac92-44aa-9ded-3909b64290ca)
 #### Set a flag if the branch is reached:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cf9f7319-5267-4074-a336-94390c8ad201)
+![Set a flag if the branch is reached](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cf9f7319-5267-4074-a336-94390c8ad201)
 #### Coverage results output:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cec52a48-7904-4708-8603-c2caee802718)
+![Coverage results output](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cec52a48-7904-4708-8603-c2caee802718)
 #### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e056c75d-d97b-41fb-bfac-b51efeddc259)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e056c75d-d97b-41fb-bfac-b51efeddc259)
 #### Set a flag if the branch is reached:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8639b5d3-c4d9-4510-8c78-313a581585df)
+![Set a flag if the branch is reached](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8639b5d3-c4d9-4510-8c78-313a581585df)
 ####
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/d92a06bc-43d1-4a7e-b62e-1ce23516f2a5)
+![Set a flag if the branch is reached](https://github.com/YBushi/SEP-Assingment1/assets/113595455/d92a06bc-43d1-4a7e-b62e-1ce23516f2a5)
 #### Coverage results output:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/99a1f6c1-46c3-4989-8516-fc049d54f389)
+![Coverage results output](https://github.com/YBushi/SEP-Assingment1/assets/113595455/99a1f6c1-46c3-4989-8516-fc049d54f389)
 ####
 #### 3.4
 #### New Tests 
 #### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/1007aaf6-8a61-49ea-9729-e3f52bd674cf)
+![New Tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/1007aaf6-8a61-49ea-9729-e3f52bd674cf)
 ####
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/f43daf3c-505f-4b69-9a77-82dbb51a40a2)
+![New Tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/f43daf3c-505f-4b69-9a77-82dbb51a40a2)
 #### Coverage before:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/2f8b12e4-2b33-4047-ba30-99c08838881f)
+![Coverage before tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/2f8b12e4-2b33-4047-ba30-99c08838881f)
 ####
 #### Coverage after:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e6220d6b-a68d-4d21-b890-55be099b600f)
+![Coverage after tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e6220d6b-a68d-4d21-b890-55be099b600f)
 #### New Tests 
 #### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9cbbb9be-455c-4bc3-97ea-b547cf1f3f01)
+![New Tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9cbbb9be-455c-4bc3-97ea-b547cf1f3f01)
 #### Coverage before : 
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/b5e3b5b7-fcf3-486d-9deb-58519bed2be9)
+![Coverage before tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/b5e3b5b7-fcf3-486d-9deb-58519bed2be9)
 #### Coverage after:
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/374fdd51-de07-4af6-9c40-32729cfdab91)
+![Coverage after tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/374fdd51-de07-4af6-9c40-32729cfdab91)
 
 
 
