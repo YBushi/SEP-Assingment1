@@ -106,7 +106,7 @@ Coverage results provided by the existing tool:
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](https://github.com/YBushi/SEP-Assingment1/assets/113595455/076c647d-ac92-44aa-9ded-3909b64290ca)
 #### Set a flag if the branch is reached:
-![Set a flag if the branch is reached](nikola-images/data_structure_coverage.png)
+![Set a flag if the branch is reached](https://github.com/YBushi/SEP-Assingment1/assets/113595455/26f43f00-8bb6-4bf0-9e94-1ee6fd413f4f)
 #### Coverage results output:
 ![Coverage results output](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cec52a48-7904-4708-8603-c2caee802718)
 #### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
