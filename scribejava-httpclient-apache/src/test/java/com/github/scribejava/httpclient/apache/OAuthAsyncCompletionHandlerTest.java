@@ -9,6 +9,8 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.ProtocolVersion;
@@ -78,6 +80,32 @@ public class OAuthAsyncCompletionHandlerTest {
         assertNull(callback.getThrowable());
         // verify latch is released
         assertEquals("All good", handler.getResult());
+    }
+
+    // new test http == null
+    @Test
+    public void testHttpEntityIsNull() throws Exception {
+        handler = new OAuthAsyncCompletionHandler<>(callback, ALL_GOOD_RESPONSE_CONVERTER);
+        final HttpResponse response
+                = new BasicHttpResponse(new BasicStatusLine(new ProtocolVersion("4", 1, 1), 200, "ok"));
+        response.setEntity(null); // Simulate null httpEntity
+        handler.completed(response);
+        assertNull(callback.getResponse()); // Ensure response is null
+        assertNull(callback.getThrowable()); // Ensure no exception was thrown
+        assertNull(handler.getResult()); // Ensure handler result is null
+    }
+
+    // new test check that timeout exception is thrown when timeout expires
+    @Test
+    public void testGetResultTimeoutException() throws Exception {
+        handler = new OAuthAsyncCompletionHandler<>(callback, ALL_GOOD_RESPONSE_CONVERTER);
+        // Ensure the latch is not counted down to simulate a timeout
+        assertThrows(TimeoutException.class, new ThrowingRunnable() {
+            @Override
+            public void run() throws Throwable {
+                handler.getResult(1, TimeUnit.MILLISECONDS);
+            }
+        });
     }
 
     @Test
