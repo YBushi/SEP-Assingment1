@@ -8,7 +8,9 @@ Programming language: Java
 
 ## Coverage measurement
 ### Existing tool
-Name of the existing tool used was Jacoco. It was executed by adding a Jacoco plugin into the pom.xml file and then executing maven.
+Name of the existing tool used was Jacoco. It was executed by adding a Jacoco plugin into the pom.xml file and then executing command: "mvn clean jacoco:prepare-agent install jacoco:report"
+
+Coverage results provided by the existing tool:
 ![ScreenShot of coverage scribejava-apis](coverageTool_images/scribeJava-apis-before.png)
 ![ScreenShot of coverage scribejava-core](coverageTool_images/scribeJava-core-before.png)
 ![ScreenShot of coverage scribejava-httpclient-ahc](coverageTool_images/scribeJava-http-ahc-before.png)
@@ -18,7 +20,6 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![ScreenShot of coverage scribejava-httpclient-okhttp](coverageTool_images/scribeJava-http-okhttp-before.png)
 
 ### Our own coverage tool
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Tomas Busa
 #### 3.3
 #### Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
@@ -302,3 +303,4 @@ New coverage results:
 ![ScreenShot of coverage scribejava-httpclient-okhttp](coverageTool_images/scribeJava-http-okhttp-after.png)
 
 ## Statement of individual contributions
+Tomas: I have added the jacoco plugin into the pom.xml file and executed the previously mentioned command to generate coverage reports. I have created my own coverage tool for two functions which showed me which branches weren't covered by the existing tests. I have created new test cases which improved the branch coverage for those functions. Lastly, I have created the new coverage reports after we merged all of our development branches that contained new test cases, which improved our overall branch coverage.
