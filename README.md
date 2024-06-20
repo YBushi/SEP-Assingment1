@@ -104,11 +104,11 @@ Coverage results provided by the existing tool:
 #### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
 
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![Data Structure to hold coverage information, write all information about the branches taken to a console](https://github.com/YBushi/SEP-Assingment1/assets/113595455/076c647d-ac92-44aa-9ded-3909b64290ca)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_1_Data_Structure_to_hold_coverage_information.png)
 #### Set a flag if the branch is reached:
-![Set a flag if the branch is reached](https://github.com/YBushi/SEP-Assingment1/assets/113595455/26f43f00-8bb6-4bf0-9e94-1ee6fd413f4f)
+![Set a flag if the branch is reached](nikola-images/Function_1_flag_if_the_branch_is_reached.png)
 #### Coverage results output:
-![Coverage results output](https://github.com/YBushi/SEP-Assingment1/assets/113595455/cec52a48-7904-4708-8603-c2caee802718)
+![Coverage results output](nikola-images/Function_1_Coverage_results.png)
 #### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e056c75d-d97b-41fb-bfac-b51efeddc259)
@@ -122,14 +122,14 @@ Coverage results provided by the existing tool:
 #### 3.4
 #### New Tests 
 #### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
-![New Tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/1007aaf6-8a61-49ea-9729-e3f52bd674cf)
+![New Tests](nikola-images/Function_1_New_tests.png)
 ####
-![New Tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/f43daf3c-505f-4b69-9a77-82dbb51a40a2)
+![New Tests 2nd part](nikola-images/Function_1_New_tests_2nd_part.png)
 #### Coverage before:
-![Coverage before tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/2f8b12e4-2b33-4047-ba30-99c08838881f)
+![Coverage before tests](nikola-images/Function_1_Coverage_before.png)
 ####
 #### Coverage after:
-![Coverage after tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e6220d6b-a68d-4d21-b890-55be099b600f)
+![Coverage after tests](nikola-images/Function_1_Coverage_after.png)
 #### New Tests 
 #### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 ![New Tests](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9cbbb9be-455c-4bc3-97ea-b547cf1f3f01)
