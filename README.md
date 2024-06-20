@@ -124,7 +124,7 @@ Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpc
 Data Structure to hold coverage information, write all information about the branches taken to a console:
 
 
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/060d6659-83f2-400f-b5ba-ee9f33f57501)
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/e056c75d-d97b-41fb-bfac-b51efeddc259)
 
 
 Set a flag if the branch is reached:
