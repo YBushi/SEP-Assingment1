@@ -171,7 +171,10 @@ Data Structure to hold coverage information, write all information about the bra
 
 Set a flag if the branch is reached:
 
-![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/9bd776b8-279f-4a6f-924a-e84a74650c0f)
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/8639b5d3-c4d9-4510-8c78-313a581585df)
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/d92a06bc-43d1-4a7e-b62e-1ce23516f2a5)
+
+
 
 
 
