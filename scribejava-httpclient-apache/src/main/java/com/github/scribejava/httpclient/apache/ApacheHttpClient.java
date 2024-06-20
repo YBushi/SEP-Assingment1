@@ -18,12 +18,39 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 import org.apache.http.impl.nio.client.HttpAsyncClientBuilder;
 
 public class ApacheHttpClient extends AbstractAsyncOnlyHttpClient {
 
     private final CloseableHttpAsyncClient client;
+    //data structure for info about the branches
+    private static final ConcurrentHashMap<String, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
+    static {
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_1", new AtomicBoolean(false)); // GET
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_2", new AtomicBoolean(false)); // PUT
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_3", new AtomicBoolean(false)); // DELETE
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_4", new AtomicBoolean(false)); // HEAD
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_5", new AtomicBoolean(false)); // POST
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_6", new AtomicBoolean(false)); // PATCH
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_7", new AtomicBoolean(false)); // TRACE
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_8", new AtomicBoolean(false)); // OPTIONS
+        branchCoverage.put("ApacheHttpClient.getRequestBuilder.branch_9", new AtomicBoolean(false)); // DEFAULT
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            @Override
+            public void run() {
+                synchronized (System.out) {
+                    System.out.println("ApacheHttpClient.java getRequestBuilder method coverage:");
+                    for (Map.Entry<String, AtomicBoolean> entry : branchCoverage.entrySet()) {
+                        System.out.println(entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
+                    }
+                }
+            }
+        }));
+    }
 
     public ApacheHttpClient() {
         this(ApacheHttpClientConfig.defaultConfig());
@@ -100,27 +127,45 @@ public class ApacheHttpClient extends AbstractAsyncOnlyHttpClient {
         final Future<HttpResponse> future = client.execute(builder.build(), handler);
         return new ApacheHttpFuture<>(future, handler);
     }
-    
+
     //branch coverage: Tomas
-    private static RequestBuilder getRequestBuilder(Verb httpVerb) {
+    public static RequestBuilder getRequestBuilder(Verb httpVerb) {
         switch (httpVerb) {
+            //ID: ApacheHttpClient.getRequestBuilder.branch_1
             case GET:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_1").set(true);
                 return RequestBuilder.get();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_2
             case PUT:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_2").set(true);
                 return RequestBuilder.put();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_3 
             case DELETE:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_3").set(true);
                 return RequestBuilder.delete();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_4    
             case HEAD:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_4").set(true);
                 return RequestBuilder.head();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_5    
             case POST:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_5").set(true);
                 return RequestBuilder.post();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_6
             case PATCH:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_6").set(true);
                 return RequestBuilder.patch();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_7
             case TRACE:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_7").set(true);
                 return RequestBuilder.trace();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_8
             case OPTIONS:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_8").set(true);
                 return RequestBuilder.options();
+            //ID: ApacheHttpClient.getRequestBuilder.branch_9
             default:
+                branchCoverage.get("ApacheHttpClient.getRequestBuilder.branch_9").set(true);
                 throw new IllegalArgumentException("message build error: unknown verb type");
         }
     }
