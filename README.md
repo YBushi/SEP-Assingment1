@@ -179,6 +179,8 @@ Coverage results output:
 
 
 ![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/5f51c833-949a-4ec0-8853-14c1574370dc)
+![image](https://github.com/YBushi/SEP-Assingment1/assets/113595455/99a1f6c1-46c3-4989-8516-fc049d54f389)
+
 
 
 
