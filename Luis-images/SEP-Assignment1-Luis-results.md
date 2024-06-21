@@ -1,38 +1,19 @@
 ﻿## Luis Sartorius
-# **Function 1: appendSignature**
-
-![Modified code for OAuth10aService](/Luis-imagesimage-4.png)
-![Modified code for OAuth10aService](/Luis-images/image-3.png)
-
-# **Function 2: Equals**
-#### Polar
-![Modified code for Polar](/Luis-images/image-8.png)
-![Modified code for Polar](/Luis-images/image-9.png)
-
-#### FitBit
+# **Function 1: Equals for FitBit**
 ![Modified code for Fitbit](/Luis-images/image-12.png)
 ![Modified code for Fitbit](/Luis-images/image-13.png)
+
+# **Function 2: Equals for Polar**
+![Modified code for Polar](/Luis-images/image-8.png)
+![Modified code for Polar](/Luis-images/image-9.png)
 
 
 ### Individual tests
 
 #### Console logs for branch hits taken.
-![Print results for OAuth10aService](/Luis-images/image.png)
 ![Print results for Auth2](/Luis-images/image-5.png)
 
-## Test 1 for appendSignature
-Created a test file
-[Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-core/src/test/java/com/github/scribejava/core/oauth/OAuth10aServiceTest.java]
-#### Before:
-![OAuth10aService coverage before](/Luis-images/image-1.png)
-#### After:
-![OAuth10aService coverage after](/Luis-images/image-2.png)
-
-#### Results:
-The coverage went to 0 to 100% because no test was created for it.
-
-
-## Test 2 for Equals
+## Test 1 Equals for Polar
 Created a test file
 ### Auth2Polar
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/polar/PolarOAuth2AccessTokenTest.java]
@@ -40,6 +21,12 @@ Created a test file
 ![Polar coverage before](/Luis-images/image-7.png)
 #### After:
 ![Polar coverage after](/Luis-images/image-6.png)
+
+#### Results:
+The coverage went to 0 to 100% because no test was created for it.
+
+
+## Test 2 Equals for FitBit
 
 ### Auth2FitBit
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/fitbit/FitBitOAuth2AccessTokenTest.java]
@@ -49,7 +36,7 @@ Created a test file
 ![FitBit coverage after](/Luis-images/image-10.png)
 
 #### Results:
-The coverage went to 0 to 100% because no tests was created for both.
+The coverage went to 0 to 100% because no test was created for it.
 
 
 
