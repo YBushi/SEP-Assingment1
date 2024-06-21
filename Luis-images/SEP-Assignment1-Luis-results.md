@@ -1,7 +1,7 @@
 ﻿## Luis Sartorius
 # **Function 1: appendSignature**
 
-![Modified code for OAuth10aService](Luis-images/image-4.png)
+![Modified code for OAuth10aService](image-4.png)
 ![Modified code for OAuth10aService](Luis-images/image-3.png)
 
 # **Function 2: Equals**
