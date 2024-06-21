@@ -140,58 +140,48 @@ Coverage results provided by the existing tool:
 
 
 
-## Luis Sartorius
-# **Function 1: appendSignature**
+﻿#### Luis Sartorius
+#### **Function 1: Equals for FitBit**
+![Modified code for Fitbit](/Luis-images/image-12.png)
+![Modified code for Fitbit](/Luis-images/image-13.png)
 
-![Modified code for OAuth10aService](Luis-images/image-4.png)
-![Modified code for OAuth10aService](Luis-images/image-3.png)
-
-# **Function 2: Equals**
-#### Polar
-![Modified code for Polar](Luis-images/image-8.png)
-![Modified code for Polar](Luis-images/image-9.png)
-
-#### FitBit
-![Modified code for Fitbit](Luis-images/image-12.png)
-![Modified code for Fitbit](Luis-images/image-13.png)
+#### **Function 2: Equals for Polar**
+![Modified code for Polar](/Luis-images/image-8.png)
+![Modified code for Polar](/Luis-images/image-9.png)
 
 
-### Individual tests
+#### Individual tests
 
 #### Console logs for branch hits taken.
-![Print results for OAuth10aService](Luis-images/image.png)
-![Print results for Auth2](Luis-images/image-5.png)
+![Print results for Auth2](/Luis-images/image-5.png)
 
-## Test 1 for appendSignature
+#### Test 1 Equals for Polar
 Created a test file
-[Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-core/src/test/java/com/github/scribejava/core/oauth/OAuth10aServiceTest.java]
+#### Auth2Polar
+[Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/polar/PolarOAuth2AccessTokenTest.java]
 #### Before:
-![OAuth10aService coverage before](Luis-images/image-1.png)
+![Polar coverage before](/Luis-images/image-7.png)
 #### After:
-![OAuth10aService coverage after](Luis-images/image-2.png)
+![Polar coverage after](/Luis-images/image-6.png)
 
 #### Results:
 The coverage went to 0 to 100% because no test was created for it.
 
 
-## Test 2 for Equals
-Created a test file
-### Auth2Polar
-[Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/polar/PolarOAuth2AccessTokenTest.java]
-#### Before:
-![Polar coverage before](Luis-images/image-7.png)
-#### After:
-![Polar coverage after](Luis-images/image-6.png)
+#### Test 2 Equals for FitBit
 
-### Auth2FitBit
+#### Auth2FitBit
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/fitbit/FitBitOAuth2AccessTokenTest.java]
 #### Before:
-![FitBit coverage before](Luis-images/image-11.png)
+![FitBit coverage before](/Luis-images/image-11.png)
 #### After:
-![FitBit coverage after](Luis-images/image-10.png)
+![FitBit coverage after](/Luis-images/image-10.png)
 
 #### Results:
-The coverage went to 0 to 100% because no tests was created for both.
+The coverage went to 0 to 100% because no test was created for it.
+
+
+
 
 ### Overall
 Old coverage results:
@@ -216,3 +206,5 @@ New coverage results:
 Tomas: I have added the jacoco plugin into the pom.xml file and executed the previously mentioned command to generate coverage reports. I have created my own coverage tool for two functions which showed me which branches weren't covered by the existing tests. I have created new test cases which improved the branch coverage for those functions. Lastly, I have created the new coverage reports after we merged all of our development branches that contained new test cases, which improved our overall branch coverage.
 
 Nikola: I have used the jacoco command from the plugin to generate coverage reports and check the files where I chose the functions to instrument. I informed my teammates on the functions and files I chose so that we don't pick the same by coincidence. Then I instrumented both functions with my own coverage tool, then I got to see which branches were covered and which weren't by the existing tests. So right after that I went on to create new tests to cover the branches which weren't covered. With this approach I managed to get the branch coverage in both functions to be above 80%. While I was working on my branch "nikola-development" I was comitting frequentely. Lastly, when all my work was finished I created a pull request that was reviewed by my teammates and was then merged into the master branch.
+
+Luis: I used jacoco to help me track the functions that were not tested/low branch coverage and found that the equals function for sume auth20 were not tested. Therefore I wrote tests for both the Polar and FitBit API. I managed to get a 100% hit on the branch that I covered. I also quickly reviewed some of my teammates coverage tests and results.
