@@ -37,16 +37,16 @@ Created a test file
 ### Auth2Polar
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/polar/PolarOAuth2AccessTokenTest.java]
 #### Before:
-![Polar coverage before](/Luis-Images/image-7.png)
+![Polar coverage before](/Luis-images/image-7.png)
 #### After:
-![Polar coverage after](/Luis-Images/image-6.png)
+![Polar coverage after](/Luis-images/image-6.png)
 
 ### Auth2FitBit
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/fitbit/FitBitOAuth2AccessTokenTest.java]
 #### Before:
-![FitBit coverage before](/Luis-Images/image-11.png)
+![FitBit coverage before](/Luis-images/image-11.png)
 #### After:
-![FitBit coverage after](/Luis-Images/image-10.png)
+![FitBit coverage after](/Luis-images/image-10.png)
 
 #### Results:
 The coverage went to 0 to 100% because no tests was created for both.
