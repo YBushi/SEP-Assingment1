@@ -2,8 +2,6 @@ package com.github.scribejava.core.oauth;
 
 import java.io.IOException;
 import java.util.concurrent.Future;
-import java.util.concurrent.atomic.AtomicBoolean;
-
 import com.github.scribejava.core.builder.api.DefaultApi10a;
 import com.github.scribejava.core.builder.api.OAuth1SignatureType;
 import com.github.scribejava.core.httpclient.HttpClient;
@@ -16,37 +14,12 @@ import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import java.io.OutputStream;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutionException;
 
 /**
  * OAuth 1.0a implementation of {@link OAuthService}
  */
 public class OAuth10aService extends OAuthService {
-
-    // Luis Coverage
-    private static final ConcurrentHashMap<Integer, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
-
-    static {
-        branchCoverage.put(1, new AtomicBoolean(false)); // For HEADER case
-        branchCoverage.put(2, new AtomicBoolean(false)); // For QUERY_STRING case
-        branchCoverage.put(3, new AtomicBoolean(false)); // For default case
-
-        // Print info
-        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                synchronized (System.out) {
-                    System.out.println("OAuth10aService method coverage:");
-                    for (Map.Entry<Integer, AtomicBoolean> entry : branchCoverage.entrySet()) {
-                        System.out.println("Branch " + entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
-                    }
-                }
-            }
-        }));
-    }
-    //=========================== coverage ============================
-
 
     private static final String VERSION = "1.0";
     private final DefaultApi10a api;
@@ -222,44 +195,24 @@ public class OAuth10aService extends OAuthService {
 
     protected void appendSignature(OAuthRequest request) {
         final OAuth1SignatureType signatureType = api.getSignatureType();
-        int branchId = -1; 
-
         switch (signatureType) {
-            // Branch #1
             case HEADER:
-                branchId = 1; 
-               
-                branchCoverage.get(branchId).set(true);
-    
                 log("using Http Header signature");
-    
+
                 final String oauthHeader = api.getHeaderExtractor().extract(request);
                 request.addHeader(OAuthConstants.HEADER, oauthHeader);
                 break;
-            
-            // Branch #2
             case QUERY_STRING:
-                branchId = 2; 
-              
-                branchCoverage.get(branchId).set(true);
-    
                 log("using Querystring signature");
-    
+
                 for (Map.Entry<String, String> oauthParameter : request.getOauthParameters().entrySet()) {
                     request.addQuerystringParameter(oauthParameter.getKey(), oauthParameter.getValue());
                 }
                 break;
-            // Branch #3
             default:
-                branchId = 3;
-              
-                branchCoverage.get(branchId).set(true);
-    
                 throw new IllegalStateException("Unknown new Signature Type '" + signatureType + "'.");
         }
     }
-    
-    
 
     public DefaultApi10a getApi() {
         return api;
