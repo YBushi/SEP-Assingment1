@@ -4,14 +4,18 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.ProtocolVersion;
 import org.apache.http.entity.BasicHttpEntity;
@@ -88,11 +92,11 @@ public class OAuthAsyncCompletionHandlerTest {
         handler = new OAuthAsyncCompletionHandler<>(callback, ALL_GOOD_RESPONSE_CONVERTER);
         final HttpResponse response
                 = new BasicHttpResponse(new BasicStatusLine(new ProtocolVersion("4", 1, 1), 200, "ok"));
-        response.setEntity(null); // Simulate null httpEntity
+        response.setEntity(null); 
         handler.completed(response);
-        assertNull(callback.getResponse()); // Ensure response is null
-        assertNull(callback.getThrowable()); // Ensure no exception was thrown
-        assertNull(handler.getResult()); // Ensure handler result is null
+        assertNull(callback.getResponse()); 
+        assertNull(callback.getThrowable());
+        assertNull(handler.getResult()); 
     }
 
     // new test check that timeout exception is thrown when timeout expires
@@ -107,6 +111,20 @@ public class OAuthAsyncCompletionHandlerTest {
             }
         });
     }
+
+    // new test if callback is null
+    @Test
+    public void shouldHandleNullCallback() throws Exception {
+        handler = new OAuthAsyncCompletionHandler<>(null, ALL_GOOD_RESPONSE_CONVERTER);
+        final HttpResponse response
+                = new BasicHttpResponse(new BasicStatusLine(new ProtocolVersion("4", 1, 1), 200, "ok"));
+        final BasicHttpEntity entity = new BasicHttpEntity();
+        entity.setContent(new ByteArrayInputStream(new byte[0]));
+        response.setEntity(entity);
+        handler.completed(response);
+        assertEquals("All good", handler.getResult());
+    }
+
 
     @Test
     public void shouldReleaseLatchOnIOException() {
