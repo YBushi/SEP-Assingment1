@@ -32,11 +32,15 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
     private static final ConcurrentHashMap<String, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
     static {
         branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_1", new AtomicBoolean(false)); // loop over headers
-        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_2", new AtomicBoolean(false)); // httpEntity null check
-        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_3", new AtomicBoolean(false)); // converter null check
-        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_4", new AtomicBoolean(false)); // callback null check (onCompleted)
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_2_true", new AtomicBoolean(false)); // httpEntity is null check
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_2_false", new AtomicBoolean(false)); // httpEntity is not null check
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_3_true", new AtomicBoolean(false)); // converter is null check 
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_3_false", new AtomicBoolean(false)); // converter is not null check
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_4_true", new AtomicBoolean(false)); // callback is not null check (onCompleted)
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_4_false", new AtomicBoolean(false)); // callback is null check (onCompleted)
         branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_5", new AtomicBoolean(false)); // IOException/RuntimeException catch block
-        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_6", new AtomicBoolean(false)); // callback null check (onThrowable)
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_6_true", new AtomicBoolean(false)); // callback is not null check (onThrowable)
+        branchCoverage.put("OAuthAsyncCompletionHandler.completed.branch_6_false", new AtomicBoolean(false)); // callback is null check (onThrowable)
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
             public void run() {
@@ -72,10 +76,10 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
     
             // ID: OAuthAsyncCompletionHandler.completed.branch_2
             if (httpEntity == null) {
-                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2").set(true);
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2_true").set(true);
                 result = null; // Ensure result is null if httpEntity is null
             } else {
-                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2").set(true);
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2_flase").set(true);
                 final InputStream contentStream = httpEntity.getContent();
                 final Response response = new Response(
                     statusLine.getStatusCode(),
@@ -89,16 +93,18 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
                 final T t = converter == null ? (T) response : converter.convert(response);
                 // ID: OAuthAsyncCompletionHandler.completed.branch_3
                 if (converter == null) {
-                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_3").set(true);
+                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_3_true").set(true);
                 } else {
-                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_3").set(true);
+                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_3_false").set(true);
                 }
                 result = t;
     
                 // ID: OAuthAsyncCompletionHandler.completed.branch_4
                 if (callback != null) {
-                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_4").set(true);
+                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_4_true").set(true);
                     callback.onCompleted(result);
+                } else {
+                    branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_4_false").set(true);
                 }
             }
             // ID: OAuthAsyncCompletionHandler.completed.branch_5
@@ -107,8 +113,10 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
             exception = e;
             // ID: OAuthAsyncCompletionHandler.completed.branch_6
             if (callback != null) {
-                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_6").set(true);
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_6_true").set(true);
                 callback.onThrowable(e);
+            } else {
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_6_false").set(true);
             }
         } finally {
             latch.countDown();
