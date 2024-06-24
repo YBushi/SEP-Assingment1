@@ -16,9 +16,13 @@ public class PolarOAuth2AccessToken extends OAuth2AccessToken {
 
     static {
         branchCoverage.put("branch_1", new AtomicBoolean(false)); // this == obj
+        branchCoverage.put("branch_1_else", new AtomicBoolean(false)); // this != obj
         branchCoverage.put("branch_2", new AtomicBoolean(false)); // obj == null
+        branchCoverage.put("branch_2_else", new AtomicBoolean(false)); // obj != null
         branchCoverage.put("branch_3", new AtomicBoolean(false)); // getClass() != obj.getClass()
+        branchCoverage.put("branch_3_else", new AtomicBoolean(false)); // getClass() == obj.getClass()
         branchCoverage.put("branch_4", new AtomicBoolean(false)); // !super.equals(obj)
+        branchCoverage.put("branch_4_else", new AtomicBoolean(false)); // super.equals(obj)
         branchCoverage.put("branch_5", new AtomicBoolean(false)); // Objects.equals(userId, ((PolarOAuth2AccessToken) obj).getUserId())
 
         // Print info
@@ -60,24 +64,31 @@ public class PolarOAuth2AccessToken extends OAuth2AccessToken {
             branchCoverage.get("branch_1").set(true);
             return true;
         }
+        branchCoverage.get("branch_1_else").set(true);
+
         // ID: branch_2
         if (obj == null) {
             branchCoverage.get("branch_2").set(true);
             return false;
         }
+        branchCoverage.get("branch_2_else").set(true);
+
         // ID: branch_3
         if (getClass() != obj.getClass()) {
             branchCoverage.get("branch_3").set(true);
             return false;
         }
+        branchCoverage.get("branch_3_else").set(true);
+
         // ID: branch_4
         if (!super.equals(obj)) {
             branchCoverage.get("branch_4").set(true);
             return false;
         }
+        branchCoverage.get("branch_4_else").set(true);
+
         // ID: branch_5
-        boolean userIdEquals = Objects.equals(userId, ((PolarOAuth2AccessToken) obj).getUserId());
         branchCoverage.get("branch_5").set(true);
-        return userIdEquals;
+        return Objects.equals(userId, ((PolarOAuth2AccessToken) obj).getUserId());
     }
 }
