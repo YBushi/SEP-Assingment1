@@ -79,7 +79,7 @@ public class OAuthAsyncCompletionHandler<T> implements FutureCallback<HttpRespon
                 branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2_true").set(true);
                 result = null; // Ensure result is null if httpEntity is null
             } else {
-                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2_flase").set(true);
+                branchCoverage.get("OAuthAsyncCompletionHandler.completed.branch_2_false").set(true);
                 final InputStream contentStream = httpEntity.getContent();
                 final Response response = new Response(
                     statusLine.getStatusCode(),
