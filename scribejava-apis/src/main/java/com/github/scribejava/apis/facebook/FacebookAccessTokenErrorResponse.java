@@ -32,12 +32,25 @@ public class FacebookAccessTokenErrorResponse extends OAuthResponseException {
 
     static {
         branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_1", new AtomicBoolean(false));
+        branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_1_else", new AtomicBoolean(false));
+
         branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_2", new AtomicBoolean(false));
+        branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_2_else", new AtomicBoolean(false));
+
         branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_3", new AtomicBoolean(false));
+        branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_3_else", new AtomicBoolean(false));
+
         branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_4", new AtomicBoolean(false));
+        branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_4_else", new AtomicBoolean(false));
+
         branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_5", new AtomicBoolean(false));
+        branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_5_else", new AtomicBoolean(false));
+
         branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_6", new AtomicBoolean(false));
+        branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_6_else", new AtomicBoolean(false));
+
         branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_7", new AtomicBoolean(false));
+        branchCoverage.put("FacebookAccessTokenErrorResponse.equals.branch_7_else", new AtomicBoolean(false));
 
 
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
@@ -92,35 +105,57 @@ public class FacebookAccessTokenErrorResponse extends OAuthResponseException {
     // branch coverage Nikola
     @Override
     public boolean equals(Object obj) {
+        // ID: branch_1
         if (this == obj) {
             branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_1").set(true);
             return true;
         }
+
+        branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_1_else").set(true);
+        // ID: branch_2
         if (obj == null) {
             branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_2").set(true);
             return false;
         }
+
+        branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_2_else").set(true);
+        // ID: branch_3
         if (getClass() != obj.getClass()) {
             branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_3").set(true);
             return false;
         }
+
+        branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_3_else").set(true);
+
         FacebookAccessTokenErrorResponse other = (FacebookAccessTokenErrorResponse) obj;
+        // ID: branch_4
         if (!Objects.equals(errorMessage, other.errorMessage)) {
             branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_4").set(true);
             return false;
         }
+
+        branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_4_else").set(true);
+        // ID: branch_5
         if (!Objects.equals(type, other.type)) {
             branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_5").set(true);
             return false;
         }
+
+        branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_5_else").set(true);
+        // ID: branch_6
         if (codeInt != other.codeInt) {
             branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_6").set(true);
             return false;
         }
+
+        branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_6_else").set(true);
+        // ID: branch_7
         if (!Objects.equals(fbtraceId, other.fbtraceId)) {
             branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_7").set(true);
             return false;
         }
+        branchCoverage.get("FacebookAccessTokenErrorResponse.equals.branch_7_else").set(true);
+
         return true;
     }
 
