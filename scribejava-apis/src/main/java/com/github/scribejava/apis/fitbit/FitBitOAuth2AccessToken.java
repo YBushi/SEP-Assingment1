@@ -15,15 +15,15 @@ public class FitBitOAuth2AccessToken extends OAuth2AccessToken {
     private static final ConcurrentHashMap<String, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
 
     static {
-        branchCoverage.put("branch_1", new AtomicBoolean(false)); // this == obj
-        branchCoverage.put("branch_1_else", new AtomicBoolean(false)); // this != obj
-        branchCoverage.put("branch_2", new AtomicBoolean(false)); // obj == null
-        branchCoverage.put("branch_2_else", new AtomicBoolean(false)); // obj != null
-        branchCoverage.put("branch_3", new AtomicBoolean(false)); // getClass() != obj.getClass()
-        branchCoverage.put("branch_3_else", new AtomicBoolean(false)); // getClass() == obj.getClass()
-        branchCoverage.put("branch_4", new AtomicBoolean(false)); // !super.equals(obj)
-        branchCoverage.put("branch_4_else", new AtomicBoolean(false)); // super.equals(obj)
-        branchCoverage.put("branch_5", new AtomicBoolean(false)); // Objects.equals(userId, ((FitBitOAuth2AccessToken) obj).getUserId())
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_1", new AtomicBoolean(false)); // this == obj
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_1_else", new AtomicBoolean(false)); // Invisible else
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_2", new AtomicBoolean(false)); // obj == null
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_2_else", new AtomicBoolean(false)); // Invisible else
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_3", new AtomicBoolean(false)); // getClass() != obj.getClass()
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_3_else", new AtomicBoolean(false)); // Invisible else
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_4", new AtomicBoolean(false)); // !super.equals(obj)
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_4_else", new AtomicBoolean(false)); // Invisible else
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_5", new AtomicBoolean(false)); // Return (asses all else)
 
         // Print info
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
