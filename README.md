@@ -58,7 +58,6 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![Coverage after tests](tomas_images/function2_coverageAfter.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--
 #### Jayran Duggins
 ##### 3.3
 ###### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
