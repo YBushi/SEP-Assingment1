@@ -7,10 +7,11 @@ Number of lines of code and tool used to count it: 17332, lizard
 Programming language: Java
 
 ## Coverage measurement
+
 ### Existing tool
 Name of the existing tool used was Jacoco. It was executed by adding a Jacoco plugin into the pom.xml file and then executing command: "mvn clean jacoco:prepare-agent install jacoco:report"
 
-Coverage results provided by the existing tool:
+#### Coverage results provided by the existing tool:
 ![ScreenShot of coverage scribejava-apis](coverageTool_images/scribeJava-apis-before.png)
 ![ScreenShot of coverage scribejava-core](coverageTool_images/scribeJava-core-before.png)
 ![ScreenShot of coverage scribejava-httpclient-ahc](coverageTool_images/scribeJava-http-ahc-before.png)
@@ -21,167 +22,156 @@ Coverage results provided by the existing tool:
 
 ### Our own coverage tool
 #### Tomas Busa
-#### 3.3
-#### Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
-#### Data Structure to hold coverage information, write all information about the branches taken to a console:
+##### 3.3
+###### Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
+###### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/function1_dataStructure.png)
-#### Set a flag if the branch is reached:
+###### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](tomas_images/function1_flagsetting.png)
-#### Coverage results output:
+###### Coverage results output:
 ![Coverage results output](tomas_images/function1_results.png)
-####
-#### Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
-#### Data Structure to hold coverage information, write all information about the branches taken to a console:
+
+###### Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
+###### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](tomas_images/function2_dataStructure.png)
-#### Set a flag if the branch is reached:
+###### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](tomas_images/function2_flagsetting.png)
-#### Coverage results output:
+###### Coverage results output:
 ![Coverage results output](tomas_images/function2_results.png)
-####
-#### 3.4
-#### Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
-#### New tests:
+
+##### 3.4
+###### Function 1: com.github.scribejava.httpclient.apache.ApacheHttpClient.getRequestBuilder
+###### New tests:
 ![New tests](tomas_images/function1_newTests-1.png)
 ![New tests](tomas_images/function1_newTests-2.png)
-#### Coverage before:
+###### Coverage before:
 ![Coverage before tests](tomas_images/function1_coverageBefore.png)
-#### Coverage after:
+###### Coverage after:
 ![Coverage after tests](tomas_images/function1_coverageAfter.png)
-####
-#### Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
-#### New tests:
+
+###### Function 2: com.github.scribejava.httpclient.apache.OAuthAsyncCompletionHandler.completed
+###### New tests:
 ![New tests](tomas_images/function2_newTests.png)
-#### Coverage before:
+###### Coverage before:
 ![Coverage before tests](tomas_images/function2_coverageBefore.png)
-#### Coverage after:
+###### Coverage after:
 ![Coverage after tests](tomas_images/function2_coverageAfter.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -
 #### Jayran Duggins
-#### 3.3
-#### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
-#### Data Structure to hold coverage information, write all information about the branches taken to a console:
+##### 3.3
+###### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
+###### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](jayran_images/Function_1_Data_Structure_for_Info.png)
-#### Set a flag if the branch is reached:
+###### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](jayran_images/Function_1_Set_flag_pt1.png)
 ![Set a flag if the branch is reached](jayran_images/Function_1_Set_flag_pt2.png)
-#### Coverage results output:
+###### Coverage results output:
 ![Coverage results output](jayran_images/Function_1_Manual_Coverage_Report.png)
-####
-#### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
-#### Data Structure to hold coverage information, write all information about the branches taken to a console:
+
+###### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
+###### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](jayran_images/Function_2_Data_structure_for_info_about_the_branches_1.png)
-#### Set a flag if the branch is reached:
+###### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](jayran_images/Function_2_Set_a_flag_section.png)
-#### Coverage results output:
+###### Coverage results output:
 ![Coverage results output](jayran_images/Function_2_Manual_Coverage_Report.png)
-#### Code Used to Print Coverage (Function 1 & 2):
+###### Code Used to Print Coverage (Function 1 & 2):
 ![Code used to print coverage](jayran_images/Print_Function_Used_To_Print_Coverage_Results.png)
-####
-#### 3.4
-#### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
-#### New tests:
+
+##### 3.4
+###### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
+###### New tests:
 ![New tests](jayran_images/Function_1_TestCode_1.png)
 ![New tests](jayran_images/Function_1_TestCode_2.png)
-#### Coverage before:
+###### Coverage before:
 ![Coverage before tests](jayran_images/Function_1_Coverage_Before_New_Test.png)
-#### Coverage after (See Highlighted Function):
+###### Coverage after (See Highlighted Function):
 ![Coverage after tests](jayran_images/Function_1_Coverage_After_New_Test.png)
-####
-#### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
-#### New tests:
+
+###### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
+###### New tests:
 ![New tests](jayran_images/Function_2_TestCode.png)
-#### Coverage before:
+###### Coverage before:
 ![Coverage before tests](jayran_images/Function_2_Coverage_Before_New_Test.png)
-#### Coverage after:
+###### Coverage after:
 ![Coverage after tests](jayran_images/Function_2_Coverage_After_New_Test.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Nikola Bakalinov
-#### 3.3
-#### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
-
-#### Data Structure to hold coverage information, write all information about the branches taken to a console:
+##### 3.3
+###### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
+###### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_1_Data_Structure_to_hold_coverage_information.png)
-#### Set a flag if the branch is reached:
+###### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](nikola-images/Function_1_flag_if_the_branch_is_reached.png)
-#### Coverage results output:
+###### Coverage results output:
 ![Coverage results output](nikola-images/Function_1_Coverage_results.png)
-#### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
+###### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_2_Data_Structure_to_hold_coverage_information.png)
-#### Set a flag if the branch is reached:
+###### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](nikola-images/Function_2_flag_if_the_branch_is_reached.png)
-####
 ![Set a flag if the branch is reached 2nd part](nikola-images/Function_2_flag_if_the_branch_is_reached_2nd_part.png)
-#### Coverage results output:
+###### Coverage results output:
 ![Coverage results output](nikola-images/Function_2_Coverage_results.png)
-####
-#### 3.4
-#### New Tests 
-#### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
+
+##### 3.4
+###### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
+###### New Tests 
 ![New Tests](nikola-images/Function_1_New_tests.png)
-####
 ![New Tests 2nd part](nikola-images/Function_1_New_tests_2nd_part.png)
-#### Coverage before:
+###### Coverage before:
 ![Coverage before tests](nikola-images/Function_1_Coverage_before.png)
-####
-#### Coverage after:
+###### Coverage after:
 ![Coverage after tests](nikola-images/Function_1_Coverage_after.png)
-#### New Tests 
-#### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
+###### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
+###### New Tests 
 ![New Tests](nikola-images/Function_2_New_tests.png)
-#### Coverage before : 
+###### Coverage before : 
 ![Coverage before tests](nikola-images/Function_2_Coverage_before.png)
-#### Coverage after:
+###### Coverage after:
 ![Coverage after tests](nikola-images/Function_2_Coverage_after.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-﻿#### Luis Sartorius
-#### **Function 1: Equals for FitBit**
+#### Luis Sartorius
+##### 3.3
+###### Function 1: Equals for FitBit
 ![Modified code for Fitbit](/Luis-images/image-12.png)
 ![Modified code for Fitbit](/Luis-images/image-13.png)
-
-#### **Function 2: Equals for Polar**
+###### Function 2: Equals for Polar
 ![Modified code for Polar](/Luis-images/image-8.png)
 ![Modified code for Polar](/Luis-images/image-9.png)
-
-
-#### Individual tests
-
-#### Console logs for branch hits taken.
+##### Console logs for branch hits taken.
 ![Print results for Auth2](/Luis-images/image-5.png)
 
-#### Test 1 Equals for Polar
+##### 3.4
+###### Test 1 Equals for Polar
 Created a test file
-#### Auth2Polar
+###### Auth2Polar
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/polar/PolarOAuth2AccessTokenTest.java]
-#### Before:
+###### Before:
 ![Polar coverage before](/Luis-images/image-7.png)
-#### After:
+###### After:
 ![Polar coverage after](/Luis-images/image-6.png)
 
-#### Results:
+###### Results:
 The coverage went to 0 to 100% because no test was created for it.
 
+###### Test 2 Equals for FitBit
 
-#### Test 2 Equals for FitBit
-
-#### Auth2FitBit
+###### Auth2FitBit
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/fitbit/FitBitOAuth2AccessTokenTest.java]
-#### Before:
+###### Before:
 ![FitBit coverage before](/Luis-images/image-11.png)
-#### After:
+###### After:
 ![FitBit coverage after](/Luis-images/image-10.png)
 
-#### Results:
+###### Results:
 The coverage went to 0 to 100% because no test was created for it.
-
-
-
 
 ### Overall
 Old coverage results:
