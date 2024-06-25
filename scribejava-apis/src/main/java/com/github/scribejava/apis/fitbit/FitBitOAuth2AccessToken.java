@@ -15,15 +15,16 @@ public class FitBitOAuth2AccessToken extends OAuth2AccessToken {
     private static final ConcurrentHashMap<String, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
 
     static {
-        branchCoverage.put("branch_1", new AtomicBoolean(false)); // this == obj
-        branchCoverage.put("branch_1_else", new AtomicBoolean(false)); // this != obj
-        branchCoverage.put("branch_2", new AtomicBoolean(false)); // obj == null
-        branchCoverage.put("branch_2_else", new AtomicBoolean(false)); // obj != null
-        branchCoverage.put("branch_3", new AtomicBoolean(false)); // getClass() != obj.getClass()
-        branchCoverage.put("branch_3_else", new AtomicBoolean(false)); // getClass() == obj.getClass()
-        branchCoverage.put("branch_4", new AtomicBoolean(false)); // !super.equals(obj)
-        branchCoverage.put("branch_4_else", new AtomicBoolean(false)); // super.equals(obj)
-        branchCoverage.put("branch_5", new AtomicBoolean(false)); // final check
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_1", new AtomicBoolean(false)); // this == obj
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_1_else", new AtomicBoolean(false)); // this != obj
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_2", new AtomicBoolean(false)); // obj == null
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_2_else", new AtomicBoolean(false)); // obj != null
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_3", new AtomicBoolean(false)); // getClass() != obj.getClass()
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_3_else", new AtomicBoolean(false)); // getClass() == obj.getClass()
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_4", new AtomicBoolean(false)); // !super.equals(obj)
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_4_else", new AtomicBoolean(false)); // super.equals(obj)
+        branchCoverage.put("FitBitOAuth2AccessToken.equals.branch_5", new AtomicBoolean(false)); // Objects.equals(userId, ((FitBitOAuth2AccessToken) obj).getUserId())
+
         // Print info
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
             @Override
@@ -64,38 +65,37 @@ public class FitBitOAuth2AccessToken extends OAuth2AccessToken {
     public boolean equals(Object obj) {
         // ID: branch_1
         if (this == obj) {
-            branchCoverage.get("branch_1").set(true);
+            branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_1").set(true);
             return true;
         }
-        // invisble else
-        branchCoverage.get("branch_1_else").set(true);
+        branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_1_else").set(true);
 
         // ID: branch_2
         if (obj == null) {
-            branchCoverage.get("branch_2").set(true);
+            branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_2").set(true);
             return false;
         }
-        // invisble else
-        branchCoverage.get("branch_2_else").set(true);
+        // Invisible else
+        branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_2_else").set(true);
 
         // ID: branch_3
         if (getClass() != obj.getClass()) {
-            branchCoverage.get("branch_3").set(true);
+            branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_3").set(true);
             return false;
         }
-        // invisble else
-        branchCoverage.get("branch_3_else").set(true);
+        // Invisible else
+        branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_3_else").set(true);
 
         // ID: branch_4
         if (!super.equals(obj)) {
-            branchCoverage.get("branch_4").set(true);
+            branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_4").set(true);
             return false;
         }
-        // invisble else
-        branchCoverage.get("branch_4_else").set(true);
+        // Invisible else
+        branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_4_else").set(true);
 
-        // ID: branch_5 (somewhat invisble else)
-        branchCoverage.get("branch_5").set(true);
+        // ID: branch_5
+        branchCoverage.get("FitBitOAuth2AccessToken.equals.branch_5").set(true);
         return Objects.equals(userId, ((FitBitOAuth2AccessToken) obj).getUserId());
     }
 }
