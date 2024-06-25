@@ -86,7 +86,7 @@ Coverage results provided by the existing tool:
 ![New tests](jayran_images/Function_1_TestCode_2.png)
 #### Coverage before:
 ![Coverage before tests](jayran_images/Function_1_Coverage_Before_New_Test.png)
-#### Coverage after:
+#### Coverage after (See Highlighted Function):
 ![Coverage after tests](jayran_images/Function_1_Coverage_After_New_Test.png)
 ####
 #### Function 2: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getServicePath)
