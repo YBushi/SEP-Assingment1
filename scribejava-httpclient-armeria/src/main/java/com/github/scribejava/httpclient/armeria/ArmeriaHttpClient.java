@@ -201,7 +201,7 @@ public class ArmeriaHttpClient extends AbstractAsyncOnlyHttpClient {
         return requireNonNull(uri.getScheme(), "scheme") + "://" + requireNonNull(uri.getAuthority(), "authority");
     }
 
-    private static boolean[] getServiceCaseCoverage = new boolean[2]; // Data structure
+    private static boolean[] getServiceCaseCoverage = new boolean[4]; // Data structure
 
     /**
      * Extracts {@code path}, {@code query} and {@code fragment} portion of the
@@ -217,11 +217,17 @@ public class ArmeriaHttpClient extends AbstractAsyncOnlyHttpClient {
         if (query != null) {
             getServiceCaseCoverage[0] = true; // ID: ArmeriaHttpClient.getServicePath.branch_1
             builder.append('?').append(query);
+        } else {
+            // If query is null do nothing. This is purely for invisible eye coverage
+            getServiceCaseCoverage[1] = true; // ID: ArmeriaHttpClient.getServicePath.branch_2
         }
         final String fragment = uri.getFragment();
         if (fragment != null) {
-            getServiceCaseCoverage[1] = true; // ID: ArmeriaHttpClient.getServicePath.branch_2
+            getServiceCaseCoverage[2] = true; // ID: ArmeriaHttpClient.getServicePath.branch_2
             builder.append('#').append(fragment);
+        } else {
+            // If fragment is null do nothing. This is purely for invisible eye coverage
+            getServiceCaseCoverage[3] = true; // ID: ArmeriaHttpClient.getServicePath.branch_3
         }
         return builder.toString();
     }
@@ -229,13 +235,14 @@ public class ArmeriaHttpClient extends AbstractAsyncOnlyHttpClient {
     private static void printCoverage() {
         System.out.println("GetHttpMethod Coverage report:");
         for (int i = 0; i < getHttpCaseCoverage.length; i++) {
-            System.out.println("ArmeriaHttpClient.getHttpMethod.branch_" + (i + 1) + ": "
-                    + getHttpCaseCoverage[i]);
+            String coverageStatus = getHttpCaseCoverage[i] ? "Taken" : "Not taken";
+            System.out.println("ArmeriaHttpClient.getHttpMethod.branch_" + (i + 1) + ": " + coverageStatus);
         }
 
         System.out.println("GetService Coverage report:");
         for (int i = 0; i < getServiceCaseCoverage.length; i++) {
-            System.out.println("ArmeriaHttpClient.getServicePath.branch_" + (i + 1) + ":" + getServiceCaseCoverage[i]);
+            String coverageStatus = getServiceCaseCoverage[i] ? "Taken" : "Not taken";
+            System.out.println("ArmeriaHttpClient.getServicePath.branch_" + (i + 1) + ": " + coverageStatus);
         }
     }
 
