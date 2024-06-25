@@ -1,60 +1,98 @@
 package com.github.scribejava.apis.polar;
 
 import com.github.scribejava.core.model.OAuth2AccessToken;
-import org.junit.Test;
-import static org.junit.Assert.*;
+import java.util.Objects;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.Map;
 
-public class PolarOAuth2AccessTokenTest {
+public class PolarOAuth2AccessToken extends OAuth2AccessToken {
 
-    @Test
-    public void testEqualsSameObject() {
-        PolarOAuth2AccessToken token1 = new PolarOAuth2AccessToken("token", "type", 3600, "refresh", "scope", "user1", "raw");
-        PolarOAuth2AccessToken token4 = token1;
+    private static final long serialVersionUID = 1L;
+    private final String userId;
 
-        // Same object comparison (branch_1)
-        assertTrue(token1.equals(token4));
+    // Coverage Luis
+    private static final ConcurrentHashMap<String, AtomicBoolean> branchCoverage = new ConcurrentHashMap<>();
+
+    static {
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_1", new AtomicBoolean(false)); // this == obj
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_1_else", new AtomicBoolean(false)); // this != obj
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_2", new AtomicBoolean(false)); // obj == null
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_2_else", new AtomicBoolean(false)); // obj != null
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_3", new AtomicBoolean(false)); // getClass() != obj.getClass()
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_3_else", new AtomicBoolean(false)); // getClass() == obj.getClass()
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_4", new AtomicBoolean(false)); // !super.equals(obj)
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_4_else", new AtomicBoolean(false)); // super.equals(obj)
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_5", new AtomicBoolean(false)); // Objects.equals(userId, ((PolarOAuth2AccessToken) obj).getUserId())
+
+        // Print info
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            @Override
+            public void run() {
+                synchronized (System.out) {
+                    System.out.println("PolarOAuth2AccessToken.java completed method coverage:");
+                    for (Map.Entry<String, AtomicBoolean> entry : branchCoverage.entrySet()) {
+                        System.out.println(entry.getKey() + ": " + (entry.getValue().get() ? "Taken" : "Not taken"));
+                    }
+                }
+            }
+        }));
+    }
+    // =================================== Coverage =====================================================
+
+    public PolarOAuth2AccessToken(String accessToken, String tokenType, Integer expiresIn, String refreshToken,
+                                  String scope, String userId, String rawResponse) {
+        super(accessToken, tokenType, expiresIn, refreshToken, scope, rawResponse);
+        this.userId = userId;
     }
 
-    @Test
-    public void testEqualsNullObject() {
-        PolarOAuth2AccessToken token1 = new PolarOAuth2AccessToken("token", "type", 3600, "refresh", "scope", "user1", "raw");
-
-        // Null comparison (branch_2)
-        assertFalse(token1.equals(null));
+    public String getUserId() {
+        return userId;
     }
 
-    @Test
-    public void testEqualsDifferentClass() {
-        PolarOAuth2AccessToken token1 = new PolarOAuth2AccessToken("token", "type", 3600, "refresh", "scope", "user1", "raw");
-
-        // Different class comparison (branch_3)
-        assertFalse(token1.equals("some string"));
+    @Override
+    public int hashCode() {
+        int hash = super.hashCode();
+        hash = 37 * hash + Objects.hashCode(userId);
+        return hash;
     }
 
-    @Test
-    public void testEqualsDifferentToken() {
-        PolarOAuth2AccessToken token1 = new PolarOAuth2AccessToken("token1", "type1", 3600, "refresh1", "scope1", "user1", "raw1");
-        PolarOAuth2AccessToken token2 = new PolarOAuth2AccessToken("token2", "type2", 3600, "refresh2", "scope2", "user2", "raw2");
+    @Override
+    public boolean equals(Object obj) {
+        // ID: branch_1
+        if (this == obj) {
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_1").set(true);
+            return true;
+        }
+        // Invisble else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_1_else").set(true);
 
-        // Different object comparison (branch_4)
-        assertFalse(token1.equals(token2));
-    }
+        // ID: branch_2
+        if (obj == null) {
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_2").set(true);
+            return false;
+        }
+        // Invisible else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_2_else").set(true);
 
-    @Test
-    public void testEqualsSameToken() {
-        PolarOAuth2AccessToken token1 = new PolarOAuth2AccessToken("token", "type", 3600, "refresh", "scope", "user1", "raw");
-        PolarOAuth2AccessToken token3 = new PolarOAuth2AccessToken("token", "type", 3600, "refresh", "scope", "user1", "raw");
+        // ID: branch_3
+        if (getClass() != obj.getClass()) {
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_3").set(true);
+            return false;
+        }
+        // Invisible else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_3_else").set(true);
 
-        // Same values comparison (branch_5)
-        assertTrue(token1.equals(token3));
-    }
+        // ID: branch_4
+        if (!super.equals(obj)) {
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_4").set(true);
+            return false;
+        }
+        // Invisible else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_4_else").set(true);
 
-    @Test
-    public void testEqualsDifferentUserId() {
-        PolarOAuth2AccessToken token1 = new PolarOAuth2AccessToken("token", "type", 3600, "refresh", "scope", "user1", "raw");
-        PolarOAuth2AccessToken token3 = new PolarOAuth2AccessToken("token", "type", 3600, "refresh", "scope", "user2", "raw");
-
-        // Different userId comparison (branch_5)
-        assertFalse(token1.equals(token3));
+        // ID: branch_5
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_5").set(true);
+        return Objects.equals(userId, ((PolarOAuth2AccessToken) obj).getUserId());
     }
 }
