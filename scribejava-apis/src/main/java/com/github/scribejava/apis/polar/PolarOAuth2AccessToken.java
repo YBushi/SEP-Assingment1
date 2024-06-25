@@ -16,14 +16,14 @@ public class PolarOAuth2AccessToken extends OAuth2AccessToken {
 
     static {
         branchCoverage.put("PolarOAuth2AccessToken.equals.branch_1", new AtomicBoolean(false)); // this == obj
-        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_1_else", new AtomicBoolean(false)); // Invisble else
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_1_else", new AtomicBoolean(false)); // this != obj
         branchCoverage.put("PolarOAuth2AccessToken.equals.branch_2", new AtomicBoolean(false)); // obj == null
-        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_2_else", new AtomicBoolean(false)); // Invisble else
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_2_else", new AtomicBoolean(false)); // obj != null
         branchCoverage.put("PolarOAuth2AccessToken.equals.branch_3", new AtomicBoolean(false)); // getClass() != obj.getClass()
-        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_3_else", new AtomicBoolean(false)); // Invisble else
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_3_else", new AtomicBoolean(false)); // getClass() == obj.getClass()
         branchCoverage.put("PolarOAuth2AccessToken.equals.branch_4", new AtomicBoolean(false)); // !super.equals(obj)
-        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_4_else", new AtomicBoolean(false)); // Invisble else
-        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_5", new AtomicBoolean(false)); // Asses all else
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_4_else", new AtomicBoolean(false)); // super.equals(obj)
+        branchCoverage.put("PolarOAuth2AccessToken.equals.branch_5", new AtomicBoolean(false)); // Objects.equals(userId, ((PolarOAuth2AccessToken) obj).getUserId())
 
         // Print info
         Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
@@ -61,34 +61,38 @@ public class PolarOAuth2AccessToken extends OAuth2AccessToken {
     public boolean equals(Object obj) {
         // ID: branch_1
         if (this == obj) {
-            branchCoverage.get("branch_1").set(true);
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_1").set(true);
             return true;
         }
-        branchCoverage.get("branch_1_else").set(true);
+        // Invisble else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_1_else").set(true);
 
         // ID: branch_2
         if (obj == null) {
-            branchCoverage.get("branch_2").set(true);
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_2").set(true);
             return false;
         }
-        branchCoverage.get("branch_2_else").set(true);
+        // Invisible else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_2_else").set(true);
 
         // ID: branch_3
         if (getClass() != obj.getClass()) {
-            branchCoverage.get("branch_3").set(true);
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_3").set(true);
             return false;
         }
-        branchCoverage.get("branch_3_else").set(true);
+        // Invisible else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_3_else").set(true);
 
         // ID: branch_4
         if (!super.equals(obj)) {
-            branchCoverage.get("branch_4").set(true);
+            branchCoverage.get("PolarOAuth2AccessToken.equals.branch_4").set(true);
             return false;
         }
-        branchCoverage.get("branch_4_else").set(true);
+        // Invisible else
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_4_else").set(true);
 
         // ID: branch_5
-        branchCoverage.get("branch_5").set(true);
+        branchCoverage.get("PolarOAuth2AccessToken.equals.branch_5").set(true);
         return Objects.equals(userId, ((PolarOAuth2AccessToken) obj).getUserId());
     }
 }
