@@ -57,7 +57,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ###### Coverage after:
 ![Coverage after tests](tomas_images/function2_coverageAfter.png)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Jayran Duggins
 ##### 3.3
 ###### Function 1: scribejava-httpclient-armeria/src/main/java/com/github/scribejava/httpclient/armeria/ArmeriaHttpClient.java (getHttpMethod)
@@ -97,7 +97,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ###### Coverage after:
 ![Coverage after tests](jayran_images/Function_2_Coverage_After_New_Test.png)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Nikola Bakalinov
 ##### 3.3
@@ -134,7 +134,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ###### Coverage after:
 ![Coverage after tests](nikola-images/Function_2_Coverage_after.png)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### Luis Sartorius
 ##### 3.3
@@ -198,4 +198,4 @@ Nikola: I have used the jacoco command from the plugin to generate coverage repo
 
 Luis: I used jacoco to help me track the functions that were not tested/low branch coverage and found that the equals function for sume auth20 were not tested. Therefore I wrote tests for both the Polar and FitBit API. I managed to get a 100% hit on the branch that I covered. I also quickly reviewed some of my teammates coverage tests and results.
 
-Jayran: I ran the existing tests on the project, and using the jacoco plugin, I looked at which functions have low branch coverages. I went through a couple to see if I can understand some of the functions code and the functionality/logic. After this, I made my own coverage tool for the two functions that I chose, which showed me which branches were not being covered (taken or not taken). The results went along side with the branches not being covered in the jacoco coverage report, which told me that my coverage instrument was correct. After this, I made my own custom test file, which would activiate some of the branches not being reached. This was quite simple since I attemped to understand the logic of the functions that I chose. I then ran my new test along with the existing tests, and assessed the branch coverage once again using the jacoco tool. I also comapred the results of that coverage report to my coverage instrument, and once again the results were the same (where certain branches were taken and some were not). Once my work was complete, I took screenshots and pushed my code to my branch on the repository, where, I then made a pull request for it to be merged to the main branch.
+Jayran: I ran the existing tests on the project, and using the jacoco plugin, I looked at which functions have low branch coverages. I went through a couple to see which ones I understand at first glance. After this, I made my own coverage tool for the two functions that I chose, which showed me which branches were not being covered (taken or not taken). The results went along side with the branches not being covered in the jacoco coverage report, which told me that my coverage instrument was correct. After this, I made my own custom test file, which would activiate some of the branches not being reached. This was quite simple since I attemped to understand the logic of the functions that I chose. I then ran my new test along with the existing tests, and assessed the branch coverage once again using the jacoco tool. I also comapred the results of that coverage report to my coverage instrument, and once again the results were the same (where certain branches were taken and some were not). Once my work was complete, I took screenshots and pushed my code to my branch on the repository, where, I then made a pull request for it to be merged to the main branch.
