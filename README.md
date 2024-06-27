@@ -155,7 +155,7 @@ Data Structure to hold coverage information, write all information about the bra
 Created a test file
 ###### Auth2Polar
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/polar/PolarOAuth2AccessTokenTest.java]
-![test file ss][/Luis-images/fitbit+polar-branch-hit.png]
+![test file ss](/Luis-images/polar-test.png)
 ###### Before:
 ![Polar coverage before](/Luis-images/polar-result-before.png)
 ###### After:
@@ -168,7 +168,7 @@ The coverage went to 0 to 100% because no test was created for it.
 
 ###### Auth2FitBit
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/fitbit/FitBitOAuth2AccessTokenTest.java]
-![test file ss][/Luis-images/fitbit-test.png]
+![test file ss](/Luis-images/fitbit-test.png)
 ###### Before:
 ![FitBit coverage before](/Luis-images/fitbit-results-before.png)
 ###### After:
