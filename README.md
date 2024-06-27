@@ -111,12 +111,12 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![Coverage results output](nikola-images/Function_1_Coverage_resultss.png)
 ###### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_2_Data_Structure_to_hold_coverage_information.png)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_2_Data_Structure_to_hold_coverage_informationn.png)
 ###### Set a flag if the branch is reached:
 ![Set a flag if the branch is reached](nikola-images/Function_2_flag_if_the_branch_is_reached.png)
-![Set a flag if the branch is reached 2nd part](nikola-images/Function_2_flag_if_the_branch_is_reached_2nd_part.png)
+![Set a flag if the branch is reached 2nd part](nikola-images/Function_2_flag_if_the_branch_is_reached_2nd_partt.png)
 ###### Coverage results output:
-![Coverage results output](nikola-images/Function_2_Coverage_results.png)
+![Coverage results output](nikola-images/Function_2_Coverage_resultss.png)
 
 ##### 3.4
 ###### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
@@ -131,9 +131,9 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ###### New Tests 
 ![New Tests](nikola-images/Function_2_New_tests.png)
 ###### Coverage before : 
-![Coverage before tests](nikola-images/Function_2_Coverage_before.png)
+![Coverage before tests](nikola-images/Function_2_Coverage_beforee.png)
 ###### Coverage after:
-![Coverage after tests](nikola-images/Function_2_Coverage_after.png)
+![Coverage after tests](nikola-images/Function_2_Coverage_afterr.png)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
