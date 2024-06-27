@@ -162,7 +162,7 @@ Created a test file
 ![Polar coverage after](/Luis-images/polar-test-result.png)
 
 ###### Results:
-The coverage went to 0 to 100% because no test was created for it.
+The coverage went to 0 to 100% because no test was created for it and branch is the invisble else, which is why it goes up to 100%
 
 ###### Test 2 Equals for FitBit
 
@@ -175,7 +175,7 @@ The coverage went to 0 to 100% because no test was created for it.
 ![FitBit coverage after](/Luis-images/fitbit-test-results.png)
 
 ###### Results:
-The coverage went to 0 to 100% because no test was created for it.
+The coverage went to 0 to 100% because no test was created for it and branch is the invisble else, which is why it goes up to 100%
 
 
 =====================================================================================================================================================================================================
