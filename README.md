@@ -108,7 +108,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ![Set a flag if the branch is reached](nikola-images/Function_1_flag_if_the_branch_is_reached_part_1.png)
 ![Set a flag if the branch is reached](nikola-images/Function_1_flag_if_the_branch_is_reached_part_2.png)
 ###### Coverage results output:
-![Coverage results output](nikola-images/Function_1_Coverage_results.png)
+![Coverage results output](nikola-images/Function_1_Coverage_resultss.png)
 ###### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 #### Data Structure to hold coverage information, write all information about the branches taken to a console:
 ![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_2_Data_Structure_to_hold_coverage_information.png)
