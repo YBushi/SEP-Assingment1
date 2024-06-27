@@ -103,9 +103,10 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ##### 3.3
 ###### Function 1: scribejava-apis/src/main/java/com/github/scribejava/apis/facebook/FacebookAccessTokenErrorResponse.equals
 ###### Data Structure to hold coverage information, write all information about the branches taken to a console:
-![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_1_Data_Structure_to_hold_coverage_information.png)
+![Data Structure to hold coverage information, write all information about the branches taken to a console](nikola-images/Function_1_Data_Structure_to_hold_coverage_informationn.png)
 ###### Set a flag if the branch is reached:
-![Set a flag if the branch is reached](nikola-images/Function_1_flag_if_the_branch_is_reached.png)
+![Set a flag if the branch is reached](nikola-images/Function_1_flag_if_the_branch_is_reached_part_1.png)
+![Set a flag if the branch is reached](nikola-images/Function_1_flag_if_the_branch_is_reached_part_2.png)
 ###### Coverage results output:
 ![Coverage results output](nikola-images/Function_1_Coverage_results.png)
 ###### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
