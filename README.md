@@ -140,23 +140,25 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 #### Luis Sartorius
 ##### 3.3
 ###### Function 1: Equals for FitBit
-![Modified code for Fitbit](/Luis-images/image-12.png)
-![Modified code for Fitbit](/Luis-images/image-13.png)
+Data Structure to hold coverage information, write all information about the branches taken to a console:
+![Modified code for Fitbit](/Luis-images/fitbit-datastruct.png)
+![Modified code for Fitbit](/Luis-images/fitbit-equals.png)
 ###### Function 2: Equals for Polar
-![Modified code for Polar](/Luis-images/image-8.png)
-![Modified code for Polar](/Luis-images/image-9.png)
+![Modified code for Polar](/Luis-images/polar-datastruct.png)
+![Modified code for Polar](/Luis-images/polar-equals.png)
 ##### Console logs for branch hits taken.
-![Print results for Auth2](/Luis-images/image-5.png)
+![Print results for Auth2](/Luis-images/fitbit+polar-branch-hit.png)
 
 ##### 3.4
 ###### Test 1 Equals for Polar
 Created a test file
 ###### Auth2Polar
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/polar/PolarOAuth2AccessTokenTest.java]
+![test file ss][/Luis-images/polar-test.png]
 ###### Before:
-![Polar coverage before](/Luis-images/image-7.png)
+![Polar coverage before](/Luis-images/polar-result-before.png)
 ###### After:
-![Polar coverage after](/Luis-images/image-6.png)
+![Polar coverage after](/Luis-images/polar-test-result.png)
 
 ###### Results:
 The coverage went to 0 to 100% because no test was created for it.
@@ -165,13 +167,18 @@ The coverage went to 0 to 100% because no test was created for it.
 
 ###### Auth2FitBit
 [Test file][https://github.com/YBushi/SEP-Assingment1/commits/Luis-report/scribejava-apis/src/test/java/com/github/scribejava/apis/fitbit/FitBitOAuth2AccessTokenTest.java]
+![test file ss][/Luis-images/fitbit-test.png]
 ###### Before:
-![FitBit coverage before](/Luis-images/image-11.png)
+![FitBit coverage before](/Luis-images/fitbit-result-before.png)
 ###### After:
-![FitBit coverage after](/Luis-images/image-10.png)
+![FitBit coverage after](/Luis-images/fitbit-test-result.png)
 
 ###### Results:
 The coverage went to 0 to 100% because no test was created for it.
+
+
+=====================================================================================================================================================================================================
+
 
 ### Overall
 Old coverage results:
