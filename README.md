@@ -126,7 +126,7 @@ Name of the existing tool used was Jacoco. It was executed by adding a Jacoco pl
 ###### Coverage before:
 ![Coverage before tests](nikola-images/Function_1_Coverage_before.png)
 ###### Coverage after:
-![Coverage after tests](nikola-images/Function_1_Coverage_after.png)
+![Coverage after tests](nikola-images/Function_1_Coverage_afterr.png)
 ###### Function 2: scribejava-httpclient-ning/src/main/java/com/github/scribejava/httpclient/ning/NingHttpClient.doExecuteAsync
 ###### New Tests 
 ![New Tests](nikola-images/Function_2_New_tests.png)
